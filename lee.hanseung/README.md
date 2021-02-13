@@ -10,5 +10,5 @@
 ### Git commands
 
 - git add .
-- git commit -m"Created personal file"
+- git commit -m"trial"
 - git push origin main
