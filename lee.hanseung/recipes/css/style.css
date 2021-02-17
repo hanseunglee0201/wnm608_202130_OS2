@@ -132,6 +132,11 @@ hr {
   margin-top: 200px;
 }
 
+.content3 {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
 p {
   margin-right: 11%;
   margin-top: 30px;
@@ -259,6 +264,10 @@ footer {
    height: 65px;
    background-color: white;
    color: #787878;
+}
+
+.bottom {
+  margin: 200px;
 }
 
 /*.footer {
