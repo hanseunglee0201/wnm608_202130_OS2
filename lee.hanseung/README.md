@@ -5,10 +5,10 @@
 ### Git commands
 
 - git add .
-- git commit -m"trial"
+- git commit -m"message"
 - git push origin main
 
-### Instructor's Links
+### Instructor's Link
 - https://hdraws.com/aau/wnm608/cline.hamilton/
 
 ### Important Links
