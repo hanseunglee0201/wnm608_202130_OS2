@@ -8,8 +8,10 @@
 - git commit -m"trial"
 - git push origin main
 
-### Important Links
+### Instructor's Links
+- https://hdraws.com/aau/wnm608/cline.hamilton/
 
+### Important Links
 - http://hanseunglee.com
 - http://hanseunglee.com/aau/wnm608/lee.hanseung
 
