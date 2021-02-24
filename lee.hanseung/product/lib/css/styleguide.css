@@ -4,15 +4,18 @@
 	box-sizing: border-box;
 }
 
-:root {
-	--color-neutral-light:#f1eff1;
-	--color-neutral-medium:#eee;
-	--color-neutral-dark:#eee;
+:root { /*root is the top level element of this document.*/
+	--color-neutral-light:#e4e2e9;
+	--color-neutral-medium:#FAF9F1;
+	--color-neutral-dark:#363635;
 
 	--color-white:#fff;
-	--color-black:#111;
+	--color-black:#424241;
 
-	--header-height:3rem;
+
+	--header-height:3rem; /*rem is root em. em is relative to parent, 
+	but root em is always relative to root element.*/
+
 
 
 	--font-sans: Helvetica, Arial, sans-serif;
@@ -22,21 +25,84 @@
 body {
 	margin:0;
 	font-size: 100%; /*It means that it's already set in the browser(default)*/
-	font-family: var(--font-sans);
+	font-family: var(--font-sans); /*--font-sans is customized name.*/
+	background-color: var(--color-neutral-medium);
 }
 
-h1,
-h2,
-h3,
-h4,
+h1 { text-align: center;
+		padding: 2.3em 0em 0em 0em;
+		font-family: var(--sans-serif);
+		font-size: 3.3em;
+		font-weight: 300;
+		margin: 0;
+}
+
+h2 {text-align: center;
+		font-family: var(--sans-serif);
+		font-size: 1.2em;
+		font-weight: 300;
+		margin-bottom: 2em;
+		line-height: 1.5em;
+	}
+
+h3 {text-align: left;
+		font-family: var(--sans-serif);
+		font-size: 0.95em;
+		font-weight: 400;
+		margin-bottom: 0.1em;
+		line-height: 1.5em;
+	}
+
+h4 {text-align: left;
+		font-family: var(--sans-serif);
+		font-size: 2.5em;
+		font-weight: 300;
+		margin: 0 0 0.5em 0;
+		line-height: 1.5em;
+	}
+
 h5,
 h6 {
 	font-family: var(--font-serif);
 }
 
+
+.h3center {
+		text-align: center;
+		font-family: var(--sans-serif);
+		font-size: 0.95em;
+		font-weight: 400;
+		margin-bottom: 1.5em;
+		line-height: 1.5em;
+}
+
+.h4center {
+		text-align: center;
+		font-family: var(--sans-serif);
+		font-size: 2.5em;
+		font-weight: 300;
+		margin: 0 0 0.5em 0;
+		line-height: 1.5em;
+}
+
+p {text-align: left;
+		font-family: var(--sans-serif);
+		font-size: 1em;
+		font-weight: 300;
+		margin: 0;
+		line-height: 1.5em;
+}
+
+.pcenter {text-align: center;
+		font-family: var(--sans-serif);
+		font-size: 1em;
+		font-weight: 300;
+		margin: 0 0 2em 0;
+		line-height: 1.5em;
+}
+
 a {
-	color: inherit;
-	font-weight: bold;
+	color: inherit; /*inherit means this will take on whatever its parent was.*/
 	text-decoration: none;
 }
 
@@ -45,9 +111,9 @@ a:hover {
 }
 
 
-/*LAYOUT CLASSES*/
+/* LAYOUT CLASSES (this is not for design, it's for structure.) */
 .container {
-	max-width: 1000px;
+	max-width: 1500px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -62,22 +128,27 @@ a:hover {
 .flex-stretch {flex: 1 1 auto; }
 .flex-none {flex: none; }
 
+.flex-align-center { align-items: center; }
+.flex-justify-center { justify-content: center; }
+/* align is the crosses of the x-asis, and justify align with x-asis.*/
 
 
-/*COMPONENT CLASSES*/
 
+
+/* COMPONENT CLASSES (design the bigger pieces of CSS) */
 .navbar {
-	background-color: var(--color-neutral-dark);
-	color: var(--color-white);
-	line-height: var(-header-height);
+	background-color: var(--color-neutral-medium);
+	color: var(--color-black);
+	line-height: var(--header-height);
 }
 
 .navbar h1 {
-	font-size: 1em;
+	font-family: var(--font-sans);
+	font-size: 1.2em;
 	margin: 0;
 }
 
-.navbar ul,
+.nav ul,
 .navbar ul {
 	list-style-type: none;
 	margin: 0;
@@ -86,24 +157,121 @@ a:hover {
 
 .navbar a {
 	display: block;
-	padding: 0 0.5em;
+	padding: 1.5em 1.5em;
+	letter-spacing: 0.03em;
+	font-size: 0.95em;
+	font-weight: 500;
 }
 
-/*CARD*/
 
+/* VIEW WINDOW */
+.view-window {
+	position: relative;
+	overflow: hidden;
+
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+	height: 45vh; /*vh is view height. */
+}
+
+button {
+	display: block;
+	border: 0.1em solid #C0BEAC;
+	border-radius: 0.2em;
+	padding: 1.3em 4em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5em;
+	background-color: var(--color-neutral-medium);
+}
+
+.buttoncenter {
+	display: block;
+	border: 0.1em solid #C0BEAC;
+	border-radius: 0.2em;
+	padding: 1.3em 0em 0em 0em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--color-neutral-medium);
+}
+
+.seeall {
+	display: block;
+	border: 0.1em solid #C0BEAC;
+	border-radius: 0.2em;
+	padding: 1.3em 4em;
+	margin-left: 0;
+	margin-top: 2.5em;
+	background-color: var(--color-neutral-medium);
+}
+
+.smallimages {
+	width: 400px;
+	margin: 3em 2.5em 0 0;
+}
+
+img.displayed {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* CARD */
 .card {
-	background-color: white;
-	padding: 1em;
-
-	margin-bottom: 1em;
-	margin-top: 1em;
-
+	background-color: var(--color-neutral-medium);
+	padding: 1em 0em 0em 0em;
+	margin-bottom: 10em;
+	margin-top: 6em;
+	position: relative;
+	overflow: hidden;
+	border-top: 0.1em solid #C0BEAC;
 }
 
-.card.soft {
-	border-radius: 0.5em;
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.card.content {
+	border-radius: 0.2em;
+	margin: 1em 14em 0 0;
+	border-style: none;
 }
+
+.card.content.center {
+	border-radius: 0.2em;
+	margin: 1em 0em 0 0;
+	border-style: none;
+}
+
+
+.card.short {
+	border-radius: 0.2em;
+	margin: 1em 3em 0 0;
+	border-style: none;
+}
+
+
+.card.long {
+	display: flex;
+	width: 900px;
+	border-radius: 0.2em;
+	border: 1px solid var(--color-neutral-medium);
+}
+
+
+.card.dark {
+	background-color: var(--color-neutral-dark);
+	color: var(--color-white);
+}
+
+
+.card.medium {
+	background-color: var(--color-neutral-medium);
+}
+
+/*.card.flat {
+	background-color: var(--color-neutral-medium);
+	border-style: none;
+}*/
+
 
 
 
