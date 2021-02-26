@@ -13,10 +13,8 @@
 
 ### Important Links
 - http://hanseunglee.com
-- http://hanseunglee.com/aau/wnm608/lee.hanseung
+- http://hanseunglee.com/aau/wnm608/lee.hanseung/index.html
 
 ### Recipe
 - http://hanseunglee.com/aau/wnm608/lee.hanseung/recipes/index.html
 
-### Product
-- http://hanseunglee.com/aau/wnm608/lee.hanseung/product/index.html
