@@ -4,6 +4,25 @@
    display:grid;
    grid-template-columns: repeat(12,1fr);
 }
+.grid.decimal {
+   grid-template-columns: repeat(10,1fr);
+}
+
+
+
+
+
+.grid.gap {
+   --grid-gap:1em; /* Default grid gap */
+   grid-gap:var(--grid-gap);
+   gap:var(--grid-gap); /* grid-gap and gap are same, but put both becaus of all browser */
+}
+   .gap.small { --grid-gap:0.5em; }
+   .gap.large { --grid-gap:2em; }
+
+
+
+
 
 .col-1 { grid-column: span 1; }
 .col-2 { grid-column: span 2; }
@@ -21,6 +40,11 @@
 
 /* Extra Small Breakpoint */
 @media (min-width:0) {
+   
+   /*.gap.xs-small { --grid-gap:0.5em; }
+   .gap.xs-medium { --grid-gap:1em; }
+   .gap.xs-large { --grid-gap:2em; }*/
+
    .col-xs-1 { grid-column: span 1; }
    .col-xs-2 { grid-column: span 2; }
    .col-xs-3 { grid-column: span 3; }

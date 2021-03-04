@@ -51,6 +51,7 @@ h3 {text-align: left;
 		font-weight: 400;
 		margin-bottom: 0.1em;
 		line-height: 1.5em;
+		color: #4B392A;
 	}
 
 h4 {text-align: left;
@@ -61,13 +62,25 @@ h4 {text-align: left;
 		line-height: 1.5em;
 	}
 
-h5,
+h5 {text-align: center;
+		font-family: var(--sans-serif);
+		font-size: 2.2em;
+		font-weight: 300;
+		line-height: 1.3em;
+		margin: 0;
+	}
+
+
 h6 {
-	font-family: var(--font-serif);
+	text-align: center;
+	font-family: var(--sans-serif);
+		font-size: 0.95em;
+		font-weight: 500;
+		margin-top: 2em;
 }
 
 
-.h3center {
+/*.h3center {
 		text-align: center;
 		font-family: var(--sans-serif);
 		font-size: 0.95em;
@@ -83,7 +96,7 @@ h6 {
 		font-weight: 300;
 		margin: 0 0 0.5em 0;
 		line-height: 1.5em;
-}
+}*/
 
 p {text-align: left;
 		font-family: var(--sans-serif);
@@ -118,6 +131,14 @@ a:hover {
 	margin-right: auto;
 }
 
+.quote {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 6em 0 3em 0;
+
+}
+
+
 .hidden {display: none;}
 
 .display-flex {display:flex; }
@@ -137,7 +158,7 @@ a:hover {
 
 /* COMPONENT CLASSES (design the bigger pieces of CSS) */
 .navbar {
-	background-color: var(--color-neutral-medium);
+	background-color: #C0BEAC; /*var(--color-neutral-medium);*/
 	color: var(--color-black);
 	line-height: var(--header-height);
 }
@@ -147,6 +168,7 @@ a:hover {
 	font-family: var(--font-sans);
 	font-size: 1.3em;
 	margin: 0;
+	font-weight: 500;
 	padding: 1.1em 0 1.1em 0;
 }
 
@@ -159,11 +181,14 @@ a:hover {
 
 .navbar a {
 	display: block;
-	padding: 1.5em 0em 1.5em 1.5em;
-	letter-spacing: 0.03em;
+	padding: 1.5em 0em 1.5em 2.5em;
+	letter-spacing: 0.02em;
 	font-size: 0.95em;
 	font-weight: 500;
+	color: var(--color-black);
 }
+
+
 
 
 /* VIEW WINDOW */
@@ -178,15 +203,47 @@ a:hover {
 	height: 45vh; /*vh is view height. */
 }
 
-button {
+.center {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; 
+}
+
+.button1 {
 	display: block;
 	border: 0.1em solid #C0BEAC;
 	border-radius: 0.2em;
-	padding: 1.3em 4em;
+	padding: 1.5em 5em;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 4em;
 	background-color: var(--color-neutral-medium);
+}
+
+.button1:hover {
+  background-color: #4B392A;
+  color: white;
+}
+
+
+/*button {
+	display: block;
+	border: 0.1em solid #C0BEAC;
+	border-radius: 0.2em;
+	padding: 1.5em 5em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4em;
+	background-color: var(--color-neutral-medium);
+}*/
+
+
+
+.button:hover {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .buttoncenter {
@@ -209,9 +266,24 @@ button {
 	background-color: var(--color-neutral-medium);
 }
 
+.seeall:hover {
+  background-color: #4B392A;
+  color: white;
+}
+
+
+.gridline {
+	border-left: 0.1em solid #C0BEAC;
+}
+
 .smallimages {
 	width: 400px;
 	margin: 3em 2.5em 0 0;
+}
+
+.categoryimage {
+	width: 100%;
+	margin: 1.6em 2.5em 0 0;
 }
 
 img {
@@ -219,14 +291,13 @@ img {
 	width:100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -10em;
     margin-bottom: 10em;
 }
 
 /* CARD */
 .card {
 	background-color: var(--color-neutral-medium);
-	padding: 1em 0em 0em 0em;
+	padding: 3.5em 0em 0em 0em;
 	margin-bottom: 10em;
 	margin-top: 6em;
 	position: relative;
@@ -257,6 +328,7 @@ img {
 .card.dark {
 	background-color: var(--color-neutral-dark);
 	color: var(--color-white);
+	height: 300px;
 }
 
 
@@ -270,7 +342,10 @@ img {
 }*/
 
 
-
+footer {
+	background-color: #C0BEAC;
+	height: 150px;
+}
 
 
 
