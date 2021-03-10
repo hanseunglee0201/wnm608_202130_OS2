@@ -5,12 +5,13 @@
 }
 
 :root { /*root is the top level element of this document.*/
-	--color-neutral-light:#e4e2e9;
-	--color-neutral-medium:#FAF9F1;
+	--color-neutral-light:#FAF9F1;
+	--color-neutral-medium:#C0BEAC;
 	--color-neutral-dark:#363635;
 
 	--color-white:#fff;
-	--color-black:#424241;
+	--color-dark-black:#333333;
+	--color-black:#252525;
 
 
 	--header-height:3rem; /*rem is root em. em is relative to parent, 
@@ -18,7 +19,7 @@
 
 
 
-	--font-sans: Helvetica, Arial, sans-serif;
+	--font-sans: Lato, Helvetica, Arial, sans-serif;
 	--font-serif: Cambria, Georgia, "Times New Roman", serif;
 }
 
@@ -26,7 +27,7 @@ body {
 	margin:0;
 	font-size: 100%; /*It means that it's already set in the browser(default)*/
 	font-family: var(--font-sans); /*--font-sans is customized name.*/
-	background-color: var(--color-neutral-medium);
+	background-color: var(--color-neutral-light);
 }
 
 h1 { text-align: center;
@@ -37,11 +38,54 @@ h1 { text-align: center;
 		margin: 0;
 }
 
-h2 {text-align: center;
+.h1typography {
+	font-size: 3.3em;
+	font-family: var(--sans-serif);
+	text-align: left;
+	padding: 0 0 0 0.2em;
+}
+
+.h2typography {
+	font-size: 2.5em;
+	font-family: var(--sans-serif);
+	text-align: left;
+	padding: 0.5em 0 0.5em 0.3em;
+	margin: 0;
+}
+
+.h3typography {
+	font-size: 0.95em;
+	font-family: var(--sans-serif);
+	text-align: left;
+	padding: 0.5em 0 0.5em 0.85em;
+	color: black;
+	margin: 0;
+}
+
+.h4typography {
+	font-size: 1.2em;
+	font-family: var(--sans-serif);
+	text-align: left;
+	padding: 1em 0 1em 0.5em;
+	color: black;
+	margin: 0;
+}
+
+.ptypography {
+	font-size: 1em;
+	font-family: var(--sans-serif);
+	text-align: left;
+	padding: 1em 0 1em 0.5em;
+	color: black;
+	margin: 0;
+}
+
+
+h2 {text-align: left;
 		font-family: var(--sans-serif);
-		font-size: 1.2em;
+		font-size: 2.5em;
 		font-weight: 300;
-		margin-bottom: 2em;
+		margin: 0;
 		line-height: 1.5em;
 	}
 
@@ -54,49 +98,21 @@ h3 {text-align: left;
 		color: #4B392A;
 	}
 
-h4 {text-align: left;
+h4 {text-align: center;
 		font-family: var(--sans-serif);
-		font-size: 2.5em;
+		font-size: 1.2em;
 		font-weight: 300;
-		margin: 0 0 0.5em 0;
+		margin-bottom: 2em;
 		line-height: 1.5em;
 	}
 
-h5 {text-align: center;
-		font-family: var(--sans-serif);
-		font-size: 2.2em;
-		font-weight: 300;
-		line-height: 1.3em;
-		margin: 0;
-	}
-
-
+h5,
 h6 {
-	text-align: center;
-	font-family: var(--sans-serif);
-		font-size: 0.95em;
-		font-weight: 500;
-		margin-top: 2em;
+   font-size:0.8em;
+   font-weight: 400;
+   padding: 0 0 0 0.8em;
 }
 
-
-/*.h3center {
-		text-align: center;
-		font-family: var(--sans-serif);
-		font-size: 0.95em;
-		font-weight: 400;
-		margin-bottom: 1.5em;
-		line-height: 1.5em;
-}
-
-.h4center {
-		text-align: center;
-		font-family: var(--sans-serif);
-		font-size: 2.5em;
-		font-weight: 300;
-		margin: 0 0 0.5em 0;
-		line-height: 1.5em;
-}*/
 
 p {text-align: left;
 		font-family: var(--sans-serif);
@@ -104,6 +120,7 @@ p {text-align: left;
 		font-weight: 300;
 		margin: 0;
 		line-height: 1.5em;
+		padding: 0.5em 0 0.5em 0;
 }
 
 .pcenter {text-align: center;
@@ -119,9 +136,6 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	text-decoration: underline;
-}
 
 
 /* LAYOUT CLASSES (this is not for design, it's for structure.) */
@@ -163,6 +177,8 @@ a:hover {
 	line-height: var(--header-height);
 }
 
+
+/* NAV */
 .navbar h1 {
 	display: block;
 	font-family: var(--font-sans);
@@ -179,6 +195,31 @@ a:hover {
 	padding-left: 0;
 }
 
+.nav a {
+   display:block;
+   padding:0em 0.5em 0.65em 0em;
+}
+
+.nav a:hover {
+	background-color:var(--color-main-medium);
+	font-weight: 600;
+   	text-decoration:none;
+   	color: #4B392A;
+}
+
+.nav.flex ul,
+.nav.stretch ul {
+      display:flex;
+   }
+
+.nav.stretch li {
+      flex:1 1 auto;
+      text-align:center;
+   }
+
+
+
+/* NAVBAR */
 .navbar a {
 	display: block;
 	padding: 1.5em 0em 1.5em 2.5em;
@@ -210,6 +251,9 @@ a:hover {
     border: none; 
 }
 
+
+
+/* BUTTON */
 .button1 {
 	display: block;
 	border: 0.1em solid #C0BEAC;
@@ -218,26 +262,13 @@ a:hover {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 4em;
-	background-color: var(--color-neutral-medium);
+	background-color: var(--color-neutral-light);
 }
 
 .button1:hover {
   background-color: #4B392A;
   color: white;
 }
-
-
-/*button {
-	display: block;
-	border: 0.1em solid #C0BEAC;
-	border-radius: 0.2em;
-	padding: 1.5em 5em;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 4em;
-	background-color: var(--color-neutral-medium);
-}*/
-
 
 
 .button:hover {
@@ -253,7 +284,7 @@ a:hover {
 	padding: 1.3em 0em 0em 0em;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: var(--color-neutral-medium);
+	background-color: var(--color-neutral-light);
 }
 
 .seeall {
@@ -263,7 +294,8 @@ a:hover {
 	padding: 1.3em 4em;
 	margin-left: 0;
 	margin-top: 2.5em;
-	background-color: var(--color-neutral-medium);
+	display: inline-block;
+	background-color: var(--color-neutral-light);
 }
 
 .seeall:hover {
@@ -271,6 +303,21 @@ a:hover {
   color: white;
 }
 
+.button.round {
+	display: block;
+	border: 0.1em solid #C0BEAC;
+	border-radius: 2em;
+	padding: 1.3em 4em;
+	margin-left: 3em;
+	margin-top: 2.5em;
+	display: inline-block;
+	background-color: var(--color-neutral-light);
+}
+
+.button.round:hover {
+	background-color: #4B392A;
+    color: white;
+}
 
 .gridline {
 	border-left: 0.1em solid #C0BEAC;
@@ -291,12 +338,13 @@ img {
 	width:100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10em;
+    margin: 0;
 }
+
 
 /* CARD */
 .card {
-	background-color: var(--color-neutral-medium);
+	background-color: var(--color-neutral-light);
 	padding: 3.5em 0em 0em 0em;
 	margin-bottom: 10em;
 	margin-top: 6em;
@@ -305,24 +353,23 @@ img {
 	border-top: 0.1em solid #C0BEAC;
 }
 
-.card.content {
-	border-radius: 0.2em;
-	margin: 1em 14em 0 0;
-	border-style: none;
+
+.card.soft {
+      border-radius:0.1em;
+      box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+      background-color: var(--color-white);
+      border-top: none;
+      padding: 1em;
+      margin: 3em;
 }
 
 
 .card.content.center {
 	border-radius: 0.2em;
 	margin: 1em 0em 0 0;
-	border-top: 0.5em solid var(--color-neutral-medium);}
+	border-top: 0.5em solid var(--color-neutral-light);}
 
 
-.card.short {
-	border-radius: 0.2em;
-	margin: 1em 3em 0 0;
-	border-style: none;
-}
 
 
 .card.dark {
@@ -333,7 +380,7 @@ img {
 
 
 .card.medium {
-	background-color: var(--color-neutral-medium);
+	background-color: var(--color-neutral-light);
 }
 
 /*.card.flat {
@@ -341,6 +388,99 @@ img {
 	border-style: none;
 }*/
 
+
+
+
+/* Card for Styleguide*/
+
+.card.standard {
+	background-color: var(--color-neutral-light);
+	padding: 2em 0 2em 1em;
+	margin-bottom: 3em;
+	margin-top: -15px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.card.soft.styleguide {
+      border-radius:0.1em;
+      box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+      background-color: var(--color-white);
+      padding: 2em 0 2em 1em;
+	margin-bottom: 3em;
+	margin-top: -15px;
+	margin-left: auto; 
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.card.soft.medium {
+      border-radius:0.1em;
+      box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+      background-color: var(--color-neutral-medium);
+      padding: 2em 0 2em 1em;
+	margin-bottom: 3em;
+	margin-top: 0;
+	margin-left: auto; 
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.card.soft.dark {
+      border-radius:0.1em;
+      box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+      background-color: var(--color-neutral-dark);
+      padding: 2em 0 2em 1em;
+	margin-bottom: 3em;
+	margin-top: 0;
+	margin-left: auto; 
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.card.content.center {
+	border-radius: 0.2em;
+	margin: 1em 0em 0 0;
+	border-top: 0.5em solid var(--color-neutral-light);}
+
+
+.card.medium {
+	background-color: var(--color-neutral-medium);
+	padding: 2em 0 2em 1em;
+	margin-bottom: 3em;
+	margin-top: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.card.dark {
+	background-color: var(--color-neutral-dark);
+	padding: 2em 0 2em 1em;
+	margin-bottom: 3em;
+	margin-top: 0;
+	position: relative;
+	overflow: hidden;
+	height: 85px;
+
+}
+
+
+
+/* WELL */
+.well {
+   background-color:var(--color-neutral-medium);
+   padding:0.5em;
+   border-radius:0.2em;
+}
+
+
+.quote {
+	text-align: center;
+}
 
 footer {
 	background-color: #C0BEAC;

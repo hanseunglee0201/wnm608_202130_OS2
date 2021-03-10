@@ -1,25 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Framework Styleguide</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS Framework Styleguide</title>
+
+   <base href="/aau/wnm608/lee.hanseung/">
+
+   <link rel="stylesheet" href="lib/css/styleguide.css">
+   <link rel="stylesheet" href="lib/css/gridsystem.css">
+   <link rel="stylesheet" href="css/storetheme.css">
 </head>
-
-<base href="/aau/wnm608/lee.hanseung/"> <!--any soruce or attribute is affected by this.  -->
- 	 
- 	<link rel="stylesheet" href="lib/css/styleguide2.css">
- 	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="css/storetheme2.css">
-
 <body>
-	
-	<div class="container">
-		<div class="card soft">
-			<h2>Typography</h2>
-		</div>
-	</div>
 
-	
+   <header class="navbar">
+      <div class="container display-flex flex-align-center">
+         <div class="flex-none">
+            <h1>Styleguide</h1>
+         </div>
+         <div class="flex-stretch"></div>
+         <nav class="nav flex-none">
+            
+         </nav>
+      </div>
+   </header>
+
+
+   <div class="container">
+      <div class="card soft">
+         <h2>Table of Contents</h2>
+
+         <ul class="nav toc">
+            <li><a href="styleguide/#typography">Typography</a></li>
+            <li><a href="styleguide/#color">Color</a></li>
+            <li><a href="styleguide/#grid">Grid</a></li>
+            <li><a href="styleguide/#card">Card</a></li>
+            <li><a href="styleguide/#navigations">Navigations</a></li>
+         </ul>
+      </div>
+   </div>
+
+
+   <div class="container" id="typography">
+      <div class="card soft">
+         <h2>Typography</h2>
+
+         <!-- h$*6{Heading $} -->
+         <div class="display-flex flex-align-center">
+            <div class="flex-none">
+               <code>&lt;h1>&lt;/h1></code>
+            </div>
+            <div class="flex-stretch"><h1 class="h1typography">Heading 1</h1></div>
+         </div>
+         <div class="display-flex flex-align-center">
+            <div class="flex-none">
+               <code>&lt;h2>&lt;/h2></code>
+            </div>
+            <div class="flex-stretch"><h2 class="h2typography">Heading 2</h2></div>
+         </div>
+         <div class="display-flex flex-align-center">
+            <div class="flex-none">
+               <code>&lt;h3>&lt;/h3></code>
+            </div>
+            <div class="flex-stretch"><h3 class="h3typography">Heading 3</h3></div>
+         </div>
+         <div class="display-flex flex-align-center">
+            <div class="flex-none">
+               <code>&lt;h4>&lt;/h4></code>
+            </div>
+            <div class="flex-stretch"><h4 class="h4typography">Heading 4</h4></div>
+         </div>
+         <div class="display-flex flex-align-center">
+            <div class="flex-none">
+               <code>&lt;h5>&lt;/h5></code>
+            </div>
+            <div class="flex-stretch"><h5>Heading 5</h5></div>
+         </div>
+         <div class="display-flex flex-align-center">
+            <div class="flex-none">
+               <code>&lt;h6>&lt;/h6></code>
+            </div>
+            <div class="flex-stretch"><h6>Heading 6</h6></div>
+         </div>
+         <div class="display-flex flex-align-center">
+            <div class="flex-none">
+               <code>&lt;p>&lt;/p></code>
+            </div>
+            <div class="flex-stretch"><p class="ptypography">Paragraph</p></div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container" id="card">
+      <div class="card soft">
+         <h2>Color</h2>
+
+         <div style="background-color:var(--color-neutral-light); padding-left: 0.5em"><p>Neutral Light  #FAF9F1</p></div>
+         <div style="background-color:var(--color-neutral-medium); padding-left: 0.5em"><p>Neutral Medium  #C0BEAC</p></div>
+         <div style="background-color:var(--color-neutral-dark); padding-left: 0.5em"><p>Neutral Dark  #363635</p></div>
+         <div style="background-color:var(--color-dark-black); padding-left: 0.5em"><p>Dark Black  #363635</p></div>
+         <div style="background-color:var(--color-black); padding-left: 0.5em"><p>Black  #363635</p></div>
+      </div>
+   </div>
+
+   <div class="container" id="grid">
+      <div class="card soft">
+         <h2>Grid</h2>
+         <h4 class="h4typography">Single Column Non Responsive</h4>
+         <div class="grid">
+            <div class="col-xs-12">
+               <div class="well">Column 12</div>
+            </div>
+         </div>
+
+         <h4 class="h4typography">2 Column Responsive</h4>
+         <div class="grid">
+            <div class="col-xs-12 col-md-6">
+               <div class="well">col-xs-12 col-md-6</div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+               <div class="well">col-xs-12 col-md-6</div>
+            </div>
+         </div>
+
+
+         <h4 class="h4typography">3 Column Responsive</h4>
+         <div class="grid">
+            <div class="col-xs-12 col-md-4">
+               <div class="well">col-xs-12 col-md-4</div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <div class="well">col-xs-12 col-md-4</div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <div class="well">col-xs-12 col-md-4</div>
+            </div>
+         </div>
+
+         <h4 class="h4typography">4 Column Responsive</h4>
+         <div class="grid">
+            <div class="col-xs-12 col-md-3">
+               <div class="well">col-xs-12 col-md-3</div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <div class="well">col-xs-12 col-md-3</div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <div class="well">col-xs-12 col-md-3</div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <div class="well">col-xs-12 col-md-3</div>
+            </div>
+         </div>
+
+         <h4 class="h4typography">4 Column Responsive With Gap</h4>
+         <div class="grid gap">
+            <div class="col-xs-12 col-md-3">
+               <div class="well">col-xs-12 col-md-3</div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <div class="well">col-xs-12 col-md-3</div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <div class="well">col-xs-12 col-md-3</div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <div class="well">col-xs-12 col-md-3</div>
+            </div>
+         </div>
+
+
+
+         <h4 class="h4typography">Image with Responsive Grid</h4>
+         <div class="grid gap">
+            <div class="col-xs-12 col-md-6">
+               <img src="https://i.pinimg.com/originals/c8/0f/b8/c80fb82a386f5dac5668852c67afa171.png" class="media-image" alt="">
+            </div>
+            <div class="col-xs-12 col-md-6">
+               <div class="grid gap">
+                  
+                  <div class="col-xs-12 col-sm-6">
+                     <img src="https://i.pinimg.com/originals/c8/0f/b8/c80fb82a386f5dac5668852c67afa171.png" class="media-image" alt="">
+                     <p class="typography">text</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                     <img src="https://i.pinimg.com/originals/c8/0f/b8/c80fb82a386f5dac5668852c67afa171.png" class="media-image" alt="">
+                     <p class="typography">text</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                     <img src="https://i.pinimg.com/originals/c8/0f/b8/c80fb82a386f5dac5668852c67afa171.png" class="media-image" alt="">
+                    <p class="typography">text</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                     <img src="https://i.pinimg.com/originals/c8/0f/b8/c80fb82a386f5dac5668852c67afa171.png" class="media-image" alt="">
+                     <p class="typography">text</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+   <div class="container" id="card">
+      <div class="card soft">
+         <h2>Card</h2>
+
+         <p class="typography">Standard Card<p>
+         <div class="card standard">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+
+         <p class="typography">Medium Card</p>
+         <div class="card medium" style="border-top: 0;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+
+         <p class="typography">Dark Card</p>
+         <div class="card dark" style="border-top: 0;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+
+         <p class="typography">Soft Standard Card<p>
+         <div class="card soft styleguide" style="border-top: 0;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+
+         <p class="typography">Soft Medium Card</p>
+         <div class="card soft medium" style="border-top: 0;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+
+         <p class="typography">Soft Dark Card</p>
+         <div class="card soft dark" style="border-top: 0;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+
+      </div>
+   </div>
+
+
+   <div class="container" id="card">
+      <div class="card soft">
+      	<h2>Button</h2>
+         <button class="seeall display-flex">Standard</button>
+         <button class="button round display-flex">Round</button>
+      </div>
+     
+   </div> 	
+
+
+
+   <div class="container" id="navigations">
+      <div class="card soft">
+         <h2>Navigations</h2>
+
+         <p class="typography">Basic Nav</p>
+         <div class="grid">
+            <div class="col-4">
+               <nav class="nav">
+                  <!-- ul>li*4>a[href=#]>{Link $} -->
+                  <ul>
+                     <li><a href="#">Link 1</a></li>
+                     <li><a href="#">Link 2</a></li>
+                     <li><a href="#">Link 3</a></li>
+                     <li><a href="#">Link 4</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="col-8">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptas, saepe accusamus beatae fugiat assumenda excepturi adipisci, nemo odio doloribus nobis iure architecto earum non aspernatur possimus dolores reprehenderit rerum perspiciatis animi eveniet ea eius omnis. Ratione, omnis, nihil corporis deserunt, deleniti laborum ad vel totam, quisquam quod esse animi.</p>
+               <p>Eos nemo, reprehenderit reiciendis totam itaque ut officia saepe necessitatibus tempora doloribus nesciunt sequi quos a. Laborum voluptate ducimus labore, unde perspiciatis enim quia animi commodi veritatis praesentium illum, corporis. Id, soluta. Repellendus tenetur, ipsam impedit nihil, quod accusantium. Repellat accusantium dolorum amet itaque quis aut voluptas delectus doloremque pariatur.</p>
+            </div>
+         </div>
+
+         <p class="typography">Flex Nav</p>
+         <nav class="nav flex">
+            <ul>
+               <li><a href="#">Link 1</a></li>
+               <li><a href="#">Link 2</a></li>
+               <li><a href="#">Link 3</a></li>
+               <li><a href="#">Link 4</a></li>
+            </ul>
+         </nav>
+
+         <p class="typography">Stretch Nav</p>
+         <nav class="nav stretch">
+            <ul>
+               <li><a href="#">Link 1</a></li>
+               <li><a href="#">Link 2</a></li>
+               <li><a href="#">Link 3</a></li>
+               <li><a href="#">Link 4</a></li>
+            </ul>
+         </nav>
+
+
+
+         <p class="typography">Navbar</p>
+      </div>
+   </div>
+
+   <header class="navbar">
+      <div class="container display-flex flex-align-center">
+         <div class="flex-none">
+            <h1>Title</h1>
+         </div>
+         <div class="flex-stretch"></div>
+         <nav class="nav flex flex-none">
+            <ul>
+               <!-- li*3>a[href=#]>{Link $} -->
+               <li><a href="#">Link 1</a></li>
+               <li><a href="#">Link 2</a></li>
+               <li><a href="#">Link 3</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   
+   <div class="container">
+      <div class="card soft">
+      </div>
+   </div>
+   
 </body>
 </html>
