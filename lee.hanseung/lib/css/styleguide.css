@@ -116,7 +116,7 @@ h6 {
 
 p {text-align: left;
 		font-family: var(--sans-serif);
-		font-size: 1em;
+		font-size: 1.1em;
 		font-weight: 300;
 		margin: 0;
 		line-height: 1.5em;
@@ -303,6 +303,23 @@ a {
   color: white;
 }
 
+.button.halfround {
+	display: block;
+	border: 0.1em solid #C0BEAC;
+	border-radius: 1em;
+	padding: 1.3em 4em;
+	margin-left: 3em;
+	margin-top: 2.5em;
+	display: inline-block;
+	background-color: var(--color-neutral-light);
+}
+
+.button.halfround:hover {
+	background-color: #4B392A;
+    color: white;
+}
+
+
 .button.round {
 	display: block;
 	border: 0.1em solid #C0BEAC;
@@ -318,6 +335,8 @@ a {
 	background-color: #4B392A;
     color: white;
 }
+
+
 
 .gridline {
 	border-left: 0.1em solid #C0BEAC;
