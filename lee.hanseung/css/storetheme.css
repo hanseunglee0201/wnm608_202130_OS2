@@ -24,7 +24,6 @@
 }
 .product-caption {
    padding:1em 2em;
-   margin-bottom: 3em;
    background-color:var(--color-neutral-light);
    border-top: 0.3em solid var(--color-neutral-medium);
 }
