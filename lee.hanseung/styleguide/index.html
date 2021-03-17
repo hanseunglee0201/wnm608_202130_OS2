@@ -36,7 +36,10 @@
             <li><a href="styleguide/#color">Color</a></li>
             <li><a href="styleguide/#grid">Grid</a></li>
             <li><a href="styleguide/#card">Card</a></li>
+            <li><a href="styleguide/#product">Product Figure</a></li>
             <li><a href="styleguide/#navigations">Navigations</a></li>
+            <li><a href="styleguide/#tables">Tables</a></li>
+            <li><a href="styleguide/#forms">Forms</a></li>
          </ul>
       </div>
    </div>
@@ -92,14 +95,14 @@
       </div>
    </div>
 
-   <div class="container" id="card">
+   <div class="container" id="color">
       <div class="card soft">
          <h2>Color</h2>
 
          <div style="background-color:var(--color-neutral-light); padding-left: 0.5em"><p>Neutral Light  #FAF9F1</p></div>
          <div style="background-color:var(--color-neutral-medium); padding-left: 0.5em"><p>Neutral Medium  #C0BEAC</p></div>
          <div style="background-color:var(--color-neutral-dark); padding-left: 0.5em"><p>Neutral Dark  #363635</p></div>
-         <div style="background-color:var(--color-dark-black); padding-left: 0.5em"><p>Dark Black  #363635</p></div>
+         <div style="background-color:var(--color-dark); padding-left: 0.5em"><p>Dark  #4B392A</p></div>
          <div style="background-color:var(--color-black); padding-left: 0.5em"><p>Black  #363635</p></div>
       </div>
    </div>
@@ -170,35 +173,6 @@
             </div>
          </div>
 
-
-
-         <h4 class="h4typography">Image with Responsive Grid</h4>
-         <div class="grid gap">
-            <div class="col-xs-12 col-md-6">
-               <img src="https://i.pinimg.com/originals/c8/0f/b8/c80fb82a386f5dac5668852c67afa171.png" class="media-image" alt="">
-            </div>
-            <div class="col-xs-12 col-md-6">
-               <div class="grid gap">
-                  
-                  <div class="col-xs-12 col-sm-6">
-                     <img src="https://i.pinimg.com/originals/c8/0f/b8/c80fb82a386f5dac5668852c67afa171.png" class="media-image" alt="">
-                     <p class="typography">text</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                     <img src="https://i.pinimg.com/originals/c8/0f/b8/c80fb82a386f5dac5668852c67afa171.png" class="media-image" alt="">
-                     <p class="typography">text</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                     <img src="https://i.pinimg.com/originals/c8/0f/b8/c80fb82a386f5dac5668852c67afa171.png" class="media-image" alt="">
-                    <p class="typography">text</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                     <img src="https://i.pinimg.com/originals/c8/0f/b8/c80fb82a386f5dac5668852c67afa171.png" class="media-image" alt="">
-                     <p class="typography">text</p>
-                  </div>
-               </div>
-            </div>
-         </div>
       </div>
    </div>
 
@@ -230,12 +204,88 @@
    </div>
 
 
-   <div class="container" id="card">
+
+
+
+   <div class="container" id="product">
+      <div class="card soft">
+         <h2>Product Figure with Responsive Grid</h2>
+
+         <figure class="product">
+            <div class="product-image">
+               <img src="https://via.placeholder.com/600?text=Banana" alt="">
+            </div>
+            <figcaption class="product-caption">
+               <div class="product-title">Product Name</div>
+               <div class="product-info">Size / Color</div>
+               <div class="product-price">&dollar;30</div>
+            </figcaption>
+         </figure>
+
+         <hr>
+
+         <div class="grid gap product-list">
+            <div class="col-xs-12 col-md-4">
+               <a href="#" class="product">
+                  <div class="product-image">
+                     <img src="https://via.placeholder.com/600?text=Banana" alt="">
+                  </div>
+                  <figcaption class="product-caption">
+                     <div class="product-title">Product Name</div>
+                     <div class="product-info">Size / Color</div>
+                     <div class="product-price">&dollar;25</div>
+                  </figcaption>
+               </a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <a href="#" class="product">
+                  <div class="product-image">
+                     <img src="https://via.placeholder.com/600?text=Banana" alt="">
+                  </div>
+                  <figcaption class="product-caption">
+                     <div class="product-title">Product Name</div>
+                     <div class="product-info">Size / Color</div>
+                     <div class="product-price">&dollar;25</div>
+                  </figcaption>
+               </a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <a href="#" class="product">
+                  <div class="product-image">
+                     <img src="https://via.placeholder.com/600?text=Banana" alt="">
+                  </div>
+                  <figcaption class="product-caption">
+                     <div class="product-title">Product Name</div>
+                     <div class="product-info">Size / Color</div>
+                     <div class="product-price">&dollar;25</div>
+                  </figcaption>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+   <div class="container" id="button">
       <div class="card soft">
       	<h2>Button</h2>
-         <button class="seeall display-flex">Standard</button>
-         <button class="button halfround display-flex">Half round</button>
-         <button class="button round display-flex">Round</button>
+         <button type="button" class="button display-flex">Standard</button>
+         <button type="button" class="filled display-flex">Standard with color filled</button>
+         <button type="button" class="button halfround display-flex">Half round</button>
+         <button type="button" class="button round display-flex">Round</button>
+         <button type="button" class="button full">Full width</button>
+
+         <p class="typography">Other layouts</p>
+         <div class="display-flex">
+            <div class="flex-stretch"></div>
+            <div class="flex-none">
+               <button type="button" class="button full" style="margin-top: 0;">Cancel</button>
+            </div>
+            <div class="flex-none">
+               <button type="button" class="full filled" style="margin-top: 0; margin-left: 1em;">Place Order</button>
+            </div>
       </div>
      
    </div> 	
@@ -308,10 +358,176 @@
       </div>
    </header>
    
-   <div class="container">
+
+<script>
+const makeTable = (classes='') => {
+   const head = ['ID','Name','Email','Phone'];
+   const body = [
+      ["Hanseung Lee",'hanseunglee89@gmail.com','415-734-0045'],
+      ["Rachel McAdams",'rachel@abouttimeandnotebook.com','650-117-1978'],
+      ["Josh Hartnett",'josh@wickerparkisagreatmovie.com','650-621-1978'],
+      ["Natalie Portman",'natalie@blackswanthebest.com','415-079-1981'],
+      ["Ansel Elgort",'ansel@moviebabydriverissogood.come','415-314-1994'],
+   ];
+   document.write(`
+   <table class="${classes}">
+      <thead><tr>${head.reduce((r,o,i,a)=>r+`<th>${o}</th>`,'')}</tr></thead>
+      <tbody>
+         ${body.reduce((r,o,i,a)=>r+
+            `<tr>${[i+1,...o].reduce((r,o,i,a)=>r+`<td>${o}</td>`,'')}</tr>`
+         ,'')}
+      </tbody>
+   </table>
+   `)
+}
+</script>
+
+
+
+   <div class="container" id="tables">
       <div class="card soft">
+         <h2>Tables</h2>
+
+         <p>Standard Table</p>
+         <script>makeTable("table")</script>
+
+         <p>Striped Table</p>
+         <script>makeTable("table striped")</script>
+
+         <p>Two Colors Striped Table</p>
+         <script>makeTable("table head")</script>
+
+         <p>Head Striped Table</p>
+         <script>makeTable("table headonly")</script>
+
+         <p>Striped and Lined Hoizontal Table</p>
+         <script>makeTable("table lined horizontal headonly")</script>
+
+         <p>Lined Vertical Table</p>
+         <script>makeTable("table lined vertical")</script>
+
+         <p>Lined both Table</p>
+         <script>makeTable("table lined horizontal vertical")</script>
+
+         <p>Lined outline striped Table</p>
+         <script>makeTable("table lined outline striped")</script>
+
+         <p>Lined all Table</p>
+         <div class="overscroll-x">
+            <script>makeTable("table lined all")</script>
+         </div>
       </div>
    </div>
-   
+
+
+   <div class="container" id="forms">
+      <div class="card soft">
+         <h2>Forms</h2>
+
+         <form action="" method=""></form>
+
+         <p>Basic Input</p>
+         <form>
+            <input type="text" placeholder="Text" class="form-input">
+            <input type="number" placeholder="Number" class="form-input">
+            <input type="search" placeholder="Search" class="form-input">
+            <input type="password" placeholder="Password" class="form-input">
+         </form>
+
+         <hr>
+
+         <p>Form Label &amp; Control</p>
+         <div class="grid gap">
+            <div class="col-md-6">
+               <div class="form-control">
+                  <label class="form-label">First Name</label>
+                  <input type="text" placeholder="First Name" class="form-input">
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="form-control">
+                  <label class="form-label">Last Name</label>
+                  <input type="text" placeholder="Last Name" class="form-input">
+               </div>
+            </div>
+         </div>   
+
+         <div class="grid gap">
+            <div class="col-md-6">
+               <div class="form-control">
+                  <label class="form-label">Address1</label>
+                  <input type="text" placeholder="Address1" class="form-input">
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="form-control">
+                  <label class="form-label">Address2 (Apt #)</label>
+                  <input type="text" placeholder="Address2" class="form-input">
+               </div>
+            </div>
+         </div>  
+
+            <div class="form-control">
+               <label class="form-label">City</label>
+               <input type="text" placeholder="City" class="form-input">
+            </div>
+
+          <div class="grid gap">
+            <div class="col-md-6">
+                  <label class="form-label">Select a State</label>
+                  <div class="form-select">
+                  <select>
+                  <option value="bird">Select a State</option>
+                  <option value="Alabama">Alabama</option>
+                  <option value="Alaska">Alaska</option>
+                  <option value="Arizona">Arizona</option>
+                  </select>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="form-control">
+                  <label class="form-label">ZIP code</label>
+                  <input type="text" placeholder="ZIP code" class="form-input">
+               </div>
+            </div>
+         </div>  
+
+         <div class="form-control">
+               <label class="form-label">Email</label>
+               <input type="text" placeholder="Email" class="form-input">
+            </div> 
+
+         <hr>
+
+         <p>Lined Input</p>
+         <div class="form-control">
+            <label class="form-label">Name</label>
+            <input type="text" placeholder="Name" class="form-input-lined">
+         </div>
+         <div class="form-control">
+            <label class="form-label">Name</label>
+            <input type="text" placeholder="Name" class="form-input-lined">
+         </div>
+
+         <hr>
+
+         <p>Hotdog Input</p>
+         <form>
+            <input type="search" class="hotdog" placeholder="Search">
+         </form>
+
+         <p>Hotdog Form</p>
+          <form class="hotdog">
+            <div class="flex-stretch">
+               <input type="search" placeholder="Search">
+            </div>
+            <div class="flex-none">
+               <img src="img/search.svg" alt="" class="icon">
+            </div>
+         </form>
+      </div>
+
+
+
 </body>
 </html>
