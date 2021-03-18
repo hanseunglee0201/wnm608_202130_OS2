@@ -704,8 +704,7 @@ hr {
    top:50%;
    right:0.5em;
    content:'▼';
-   font-family:arial;
-   font-size:0.9em;
+   font:inherit;
    color:var(--color-neutral-dark);
    pointer-events:none;
    transform: translateY(-50%);
