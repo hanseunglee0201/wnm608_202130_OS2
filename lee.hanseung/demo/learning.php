@@ -4,13 +4,14 @@
 // broken
 
 echo "<h1>Hello World</h1>";
-echo "Goodbye world";
+echo "Goodbye world\n\t";
+
 
 $a = 5; // $ means variables. Equal is assignment operator.
 
 // String Interpolation
-echo "<div>I have $ things</div>"; // Double quotes get variables.
-echo '<div>I have $ things</div>';
+echo "<div>I have $a things</div>"; // Double quotes get variables.
+echo '<div>I have $a things</div>';
 
 // Value Types
 
@@ -21,7 +22,6 @@ $b = 15;
 $b = 0.576;
 
 $b = 10;
-
 
 // String
 $name = "Yerdude";
@@ -39,9 +39,10 @@ $isOn = True;
 
 // Order of Operation
 // PEMDAS is Paranthesis, Exponents, Multiplication, Division, Addition and Substraction. (The order of opeation)
-echo 5 + 2 * 3;
+echo (5 + 2) * 3;
 
 // Concatenation
+echo "<div>b + a = c</div>";
 echo "<div>$b + $a = "  .  ($b+$a)  .  "</div>";
 
 
@@ -58,8 +59,7 @@ echo "<div>$b + $a = "  .  ($b+$a)  .  "</div>";
 
 	echo $fullname;
 
-	?>
-	. What's yours?
+	?>. What's yours?
 </div>
 
 <hr>
@@ -68,12 +68,12 @@ echo "<div>$b + $a = "  .  ($b+$a)  .  "</div>";
 
 // Superglobal
 echo "Name is: ".$_GET['name'];
-echo "<div><a href='?name=Bob'>Bob</a></div>";
+echo "<div><a href='?name=Bob'>Bob</a></div>"; // ?name=Bob을 url 마지막에 넣음으로 새로운 페이지를 만들 수 있다.
 echo "<div><a href='?name=Grace'>Grace</a></div>";
 
 echo "<div><a href='?name={$_GET['name']}&type=h1'>H1</a></div>";
 echo "<div><a href='?name={$_GET['name']}&type=textarea'>Textarea</a></div>";
-echo "Name is: <{$_GET['type']}>{$_GET['name']}</{$_GET['type']}>";
+echo "Name is: <{$_GET['type']}>{$_GET['name']}</{$_GET['type']}>"; // 복잡한 interpolation을 만들 때는 add braces around complex variables. {}.
 
 
 ?>
@@ -83,23 +83,24 @@ echo "Name is: <{$_GET['type']}>{$_GET['name']}</{$_GET['type']}>";
 <?php
 
 // Arrays
-$colors = array("red","green","blue");
-$colors = ["red","green","blue"];
+$colors = array("red","green","blue","purple");
+$colors = ["red","green","blue","purple"];
 
-echo $colors[2];
+echo $colors[2]; // inside number mostly calls index. (주로 index라 불리지만 어쩔때는 ID, and key 라고도 한다.)
 
 echo "
    <br>$colors[0]
    <br>$colors[1]
    <br>$colors[2]
+   <br>$colors[3]
 ";
 
-echo count($colors);
+echo count($colors); // Number of array를 알고싶을 때는 echo count($name of array);
 
 ?>
 
-<div style="color:<?= $colors[1] ?>">
-   This text is green
+<div style="color:<?= $colors[2] ?>">
+   This text is blue
 </div>
 
 
@@ -107,9 +108,9 @@ echo count($colors);
 
 <?php 
 
-// Associative Array
+// Associative Array. Comparing to number array, associative array has no order.
 $colorsAssoc = [
-   "red" => "#f00",
+   "red" => "#f00", // When assigning a value, use an equal arrow.
    "green" => "#0f0",
    "blue" => "#00f"
 ];
@@ -127,7 +128,7 @@ echo $colorsAssoc['red'];
 $c = "$a";
 $d = $c*1;
 
-$colorsObject = (object)$colorsAssoc;
+$colorsObject = (object)$colorsAssoc; // It means cast $colorAssoc to object.
 
 // echo $colorsObject;
 
@@ -140,7 +141,7 @@ echo $colorsAssoc['red']."<br>";
 echo $colorsAssoc[$colors[0]]."<br>";
 
 // Object Property Notation
-echo $colorsObject->red."<br>";
+echo $colorsObject->red."<br>"; // When selecting a value, use a dash arrow.
 echo $colorsObject->{$colors[0]}."<br>";
 
 ?>
@@ -149,7 +150,7 @@ echo $colorsObject->{$colors[0]}."<br>";
 
 <?php
 
-var_dump($colors);
+var_dump($colors); // var_dump prints the data
 echo "<hr>";
 var_dump($colorsAssoc);
 echo "<pre>",var_dump($colorsObject),"</pre>";
