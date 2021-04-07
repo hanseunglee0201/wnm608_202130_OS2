@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Product Item</title>
+	<title>Kitchen Item</title>
 
 	<?php include "parts/meta.php" ?>
 </head>
@@ -11,9 +11,9 @@
 
 	<div class="container">
 		<div class="card soft">
-			<h2>Product Item</h2>
+			<h2>Kitchen Item</h2>
 
-			<div>This is product item: #<?= $_GET['id'] ?></div>
+			<div>This is Kitchen item: #<?= $_GET['id'] ?></div>
 		</div>
 	</div>
 </body>

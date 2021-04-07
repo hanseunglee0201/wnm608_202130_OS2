@@ -23,7 +23,7 @@
    vertical-align:middle;
 }
 .product-caption {
-   padding:1em 2em;
+   padding:1em 0em;
    background-color:var(--color-neutral-light);
    border-top: 0.3em solid var(--color-neutral-medium);
 }
@@ -43,8 +43,13 @@
    font-size:0.95em;
    color:var(--color-dark);
    padding: 1.1em 0 0 0;
+}
 
-
+.product-detail {
+   font-size:1.1em;
+   padding: 0.7em 0;
+   color:var(--color-neutral-dark);
+}
 
 
 

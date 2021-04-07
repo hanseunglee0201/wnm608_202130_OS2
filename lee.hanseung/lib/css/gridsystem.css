@@ -18,7 +18,7 @@
    gap:var(--grid-gap); /* grid-gap and gap are same, but put both becaus of all browser */
 }
    .gap.small { --grid-gap:0.5em; }
-   .gap.large { --grid-gap:2em; }
+   .gap.large { --grid-gap:5em; }
 
 
 
