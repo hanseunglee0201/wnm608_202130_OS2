@@ -25,7 +25,7 @@
 .product-caption {
    padding:1em 0em;
    background-color:var(--color-neutral-light);
-   border-top: 0.3em solid var(--color-neutral-medium);
+   border-top: 0.3em solid var(--color-dark);
 }
 .product-price {
    font-size:1.1em;

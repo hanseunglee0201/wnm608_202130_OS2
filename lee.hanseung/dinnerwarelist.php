@@ -8,7 +8,7 @@
 <body>
 	<?php include "parts/navbar.php" ?>
 
-	 <img src="img/making.jpg" alt="">
+	 <img src="img/dinnerwaretop.jpg" alt="">
 
 
 	<div class="container" style="margin-top: 10em;">
@@ -27,7 +27,7 @@
             <div class="col-xs-12 col-md-4">
                <a href="dinnerware_item.php" class="product1">
                   <div class="product-image">
-                     <img src="https://via.placeholder.com/600?text=Product" alt="">
+                     <img src="img/plate1.jpg" alt="plate1">
                   </div>
                   <figcaption class="product-caption">
                      <div class="product-title">Product Name</div>
@@ -39,7 +39,7 @@
             <div class="col-xs-12 col-md-4">
                <a href="dinnerware_item.php?id=2" class="product2">
                   <div class="product-image">
-                     <img src="https://via.placeholder.com/600?text=Product" alt="">
+                     <img src="img/plate2.jpg" alt="plate2">
                   </div>
                   <figcaption class="product-caption">
                      <div class="product-title">Product Name</div>
@@ -51,7 +51,7 @@
             <div class="col-xs-12 col-md-4">
                <a href="dinnerware_item.php?id=3" class="product3">
                   <div class="product-image">
-                     <img src="https://via.placeholder.com/600?text=Product" alt="">
+                     <img src="img/plate3.jpg" alt="plate3">
                   </div>
                   <figcaption class="product-caption">
                      <div class="product-title">Product Name</div>
@@ -63,7 +63,7 @@
             <div class="col-xs-12 col-md-4">
                <a href="dinnerware_item.php?id=4" class="product4">
                   <div class="product-image">
-                     <img src="https://via.placeholder.com/600?text=Product" alt="">
+                     <img src="img/plate4.png" alt="plate4">
                   </div>
                   <figcaption class="product-caption">
                      <div class="product-title">Product Name</div>
@@ -76,7 +76,7 @@
             <div class="col-xs-12 col-md-4">
                <a href="dinnerware_item.php?id=5" class="product5">
                   <div class="product-image">
-                     <img src="https://via.placeholder.com/600?text=Product" alt="">
+                     <img src="img/plate5.png" alt="plate5">
                   </div>
                   <figcaption class="product-caption">
                      <div class="product-title">Product Name</div>
