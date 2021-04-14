@@ -25,20 +25,16 @@
 					</div>
 
 		    		<div class="col-xs-12 col-md-4"></div>  
-
-					<div class="col-xs-12 col-md-4">
-				        <div class="container" style="margin-bottom: 3em;">   
-				            <h3>Dinnerware</h3>
-				         	<h2>Product Name</h2>
-							<p>One of three plates available from our original Coupe line, designed in the 1940s. The clean, rimless dinner plate design is our most versatile, pairing well with any of our other lines and offered in the widest variety of glazes.</p>
-						</div>
-
-
-
-					</div>
 				</div> 
-
 			</div>
+		</div>
+
+		<div class="container">
+			<div class="card soft">
+				<h2>Confirm Cart</h2>
+
+				<div>This is some products</div>
+				<div><a href="checkout.php">Checkout</a></div>
 			</div>
 		</div>
 

@@ -50,11 +50,11 @@
 
 							<div class="grid gap">
 								<div class="col-xs-12 col-md-6">
-									<button class="button" style="width: 300px;">Add to Favorites</button>
+									<a class="button" style="width: 300px;">Add to Favorites</a>
 								</div>
 
 								<div class="col-xs-12 col-md-6">
-									<button class="button" style="width: 300px;">Add to Cart</button>
+									<a class="button" href="product_added_to_cart.php" style="width: 300px;">Add to Cart</a>
 								</div>
 
 							</div>
