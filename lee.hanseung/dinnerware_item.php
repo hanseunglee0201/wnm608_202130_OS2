@@ -21,7 +21,7 @@
 			<div class="grid gap">
 			  	<div class="col-xs-12 col-md-6">
 					<div class="product-image">
-                     <img src="https://via.placeholder.com/200?text=Product" alt="">
+                     <img src="img/dinnerware_plate_1.png" alt="">
                   	</div>
 	            </div>
 

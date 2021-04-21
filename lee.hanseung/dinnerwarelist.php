@@ -27,7 +27,7 @@
             <div class="col-xs-12 col-md-4">
                <a href="dinnerware_item.php" class="product1">
                   <div class="product-image">
-                     <img src="img/plate1.jpg" alt="plate1">
+                     <img src="img/dinnerware_plate_1.png" alt="plate1">
                   </div>
                   <figcaption class="product-caption">
                      <div class="product-title">Product Name</div>
