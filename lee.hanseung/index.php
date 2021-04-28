@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+include "lib/php/functions.php";
+include "parts/templates.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -36,7 +41,7 @@
 		            <h3>Bestsellers</h3>
 		         	<h2>Dinnerware</h2>
 					<p>Lorem ipsum, dolor sit amet, consectetur<br>adipisicing elit.</p>
-					<a class="button" href="dinnerwarelist.php">See all</a>
+					<a class="button" href="productlist.php">See all</a>
 	         	</div>
 
 				<div class="col-xs-12 col-md-4">

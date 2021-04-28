@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+include "lib/php/functions.php";
+include "parts/templates.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>About</title>

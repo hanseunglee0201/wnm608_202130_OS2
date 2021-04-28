@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+include "lib/php/functions.php";
+include "parts/templates.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Checkout</title>
@@ -14,7 +19,7 @@
          <h2>Thank you for your purchase!</h2>
 
          <div>You bought these things</div>
-         <div><a href="dinnerwarelist.php">Try out these things</a></div>
+         <div><a href="productlist.php">Try out these things</a></div>
       </div>
    </div>
 

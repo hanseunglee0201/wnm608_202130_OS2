@@ -1,4 +1,20 @@
-<!DOCTYPE html>
+<?php
+
+include "lib/php/functions.php";
+
+$product = MYSQLIQuery("
+   SELECT *
+   FROM `products`
+   WHERE `id` = {$_GET['id']}
+")[0];
+
+$thumbs = explode(",", $product->image_other);
+
+$thumb_elements = array_reduce($thumbs,function($r,$o){
+   return $r."<img src='$o'>";
+});
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Product Item</title>
@@ -9,58 +25,69 @@
 	<?php include "parts/navbar.php" ?>
 
 
-	<!-- <div class="container"> -->
-		<!-- <div class="card soft"> -->
-			<!-- <h2>Dinnerware Item</h2> -->
 
-			<!-- <div>This is Dinnerware item: #<?= $_GET['id'] ?></div> -->
-		<!-- </div> -->
-	<!-- </div> -->
 
-		<div class="container" style="margin-top: 10em; margin-bottom: 20em;">
-			<div class="grid gap">
-			  	<div class="col-xs-12 col-md-6">
-					<div class="product-image">
-                     <img src="img/dinnerware_plate_1.png" alt="">
-                  	</div>
-	            </div>
 
-	    		<div class="col-xs-12 col-md-1"></div> 
+<div class="container" style="margin-top: 10em; margin-bottom: 20em;">
+      <div class="grid gap product-display" style="margin-bottom: 10em;">
+         <div class="col-xs-12 col-md-6">
+               <div class="image-main">
+                  <img src="<?= $product->image_thumb ?>" />
+               </div>
+               <div class="image-thumbs"><?= $thumb_elements ?></div>
+ 		</div>
 
-				<div class="col-xs-12 col-md-5">
-			        <div class="container" style="margin-bottom: 3em;">    
-			            <h3>Dinnerware</h3>
-			         	<h2>Product Name</h2>
-						<p>One of three plates available from our original Coupe line, designed in the 1940s. The clean, rimless dinner plate design is our most versatile, pairing well with any of our other lines and offered in the widest variety of glazes.</p>
-					</div>
+         <div class="col-xs-12 col-md-1"></div>
 
-	                 	<figcaption class="product-caption">
-	                     	<div class="product-info">Size </div>
-	                     	<div class="product-detail">10.75" dia.</div>
-	                  	</figcaption>
+         <div class="col-xs-12 col-md-5">
 
-						<div class="card" style="margin-top: 0em; padding: 0.5em 0em 0em 0em; margin-bottom: 1em;">
-							<div class="product-info">Color</div>
-							<div class="product-detail">10.75" dia.</div>
-						</div>
-						<div class="card" style="margin-top: 0em; padding: 0.5em 0em 0em 0em; margin-bottom: 1em;">
-							<div class="product-info">Quantity</div>
-							<div class="product-detail">Buttons will be made later.</div>
-						</div>
+               <div class="card-section">
+               	  <h3><?= $product->category ?></h3>
+                  <div class="product-title"><?= $product->name ?></div>
 
-							<div class="grid gap">
-								<div class="col-xs-12 col-md-6">
-									<a class="button" style="width: 300px;">Add to Favorites</a>
-								</div>
+				<div class="product-description" style="width: 100%; margin-left: 0;">
+               		<p><?= $product->description ?></p>
+            	</div>
 
-								<div class="col-xs-12 col-md-6">
-									<a class="button" href="product_added_to_cart.php" style="width: 300px;">Add to Cart</a>
-								</div>
+            	<div class="card" style="margin-top: 0em; padding: 0.5em 0em 0em 0em; margin-bottom: 1em;">
+            	  <div class="product-info">Price</div>
+                  <div class="product-price">&dollar;<?= $product->price ?></div>
+               </div>
+               <div class="card-section">
+               	<div class="card" style="margin-top: 0em; padding: 0.5em 0em 0em 0em; margin-bottom: 1em;">
+                  <div class="product-info">Quantity</div>
+                  <div class="form-select">
 
-							</div>
-				</div> 
-			</div>
-		</div>
+                     <select>
+                        <!-- option[value='$']*10>{$} -->
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                     </select>
+                  </div>
+                 </div>
+				</div>
+
+               <div class="card-section">
+                  <a href="product_added_to_cart.php" class="filled" style="width: 100%; margin-left: 0;">Add To Cart</a>
+               </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+
+
 
 		<div class="container" style="margin-bottom: 20em;">
 			<hr>
