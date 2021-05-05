@@ -655,7 +655,39 @@ hr {
     color:var(--color-neutral-dark);
 }
 
+.form-button {
+   display:inline-block;
+   width:100%;
+   border-width:0;
+   background-color:var(--color-neutral-light);
+   padding:0.5em 1em;
+   border-radius:0.3em;
+   font:inherit;
+   outline:0;
+   text-align:center;
+   text-decoration:none;
+   cursor:pointer;
+   transition:all 0.3s;
+   -webkit-appearance:none;
+}
+.form-button:hover {
+   text-decoration:none;
+   box-shadow:0 0 10px var(--color-neutral-light);
+}
+.form-button:active {
+   background-color:var(--color-main-light);
+}
 
+.form-button.sell {
+   background-color:var(--color-sell-medium);
+   color:var(--color-white);
+}
+.form-button.sell:active {
+   background-color:var(--color-sell-dark);
+}
+.form-button.inline {
+   width:initial;
+}
 
 
 .hotdog {

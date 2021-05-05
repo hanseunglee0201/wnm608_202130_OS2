@@ -1,18 +1,18 @@
 <?php
 
 include "lib/php/functions.php";
-include "parts/templates.php";
 
-$cart = MYSQLIQuery("
-   SELECT *
-   FROM `products`
-   WHERE `id` IN (5,9,13)
-");
+pretty_dump($_POST);
+
+$product = MYSQLIQuery("SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
+$cart_product = cartItemById($product->id);
+
+// pretty_dump($product);
 
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Product Cart</title>
+   <title>Added To Cart</title>
    
    <?php include "parts/meta.php" ?>
 </head>
@@ -22,17 +22,22 @@ $cart = MYSQLIQuery("
 
    <div class="container">
       <div class="card soft">
-         <h2>Confirm Cart</h2>
-
          <?php
 
-         echo array_reduce($cart,'makeCartList');
+         if(!isset($_GET['id'])) {
+            echo "You dun goofed";
+         } else {
+            ?>
+            <h2><?= $cart_product->amount ?> <?= $product->name ?> In Your Cart</h2>
 
+            <div class="display-flex">
+               <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Back To Product</a></div>
+               <div class="flex-stretch"></div>
+               <div class="flex-none"><a class="form-button" href="product_list.php">Continue Shopping</a></div>
+            </div>
+            <?
+         }
          ?>
-
-         <div>
-            <a class="form-button" href="product_checkout.php">Checkout</a>
-         </div>
       </div>
    </div>
 </body>

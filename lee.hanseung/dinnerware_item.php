@@ -14,15 +14,17 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
    return $r."<img src='$o'>";
 });
 
+
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Product Item</title>
+   <title>Product Item</title>
 
-	<?php include "parts/meta.php" ?>
+   <?php include "parts/meta.php" ?>
 </head>
 <body>
-	<?php include "parts/navbar.php" ?>
+   <?php include "parts/navbar.php" ?>
 
 
 
@@ -35,30 +37,31 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
                   <img src="<?= $product->image_thumb ?>" />
                </div>
                <div class="image-thumbs"><?= $thumb_elements ?></div>
- 		</div>
+      </div>
 
          <div class="col-xs-12 col-md-1"></div>
 
          <div class="col-xs-12 col-md-5">
-
+            <form class="card soft flat" action="product_actions.php?crud=add-to-cart" method="post">
+               <input type="hidden" name="id" value="<?= $product->id ?>">
                <div class="card-section">
-               	  <h3><?= $product->category ?></h3>
+                    <h3><?= $product->category ?></h3>
                   <div class="product-title"><?= $product->name ?></div>
 
-				<div class="product-description" style="width: 100%; margin-left: 0;">
-               		<p><?= $product->description ?></p>
-            	</div>
+            <div class="product-description" style="width: 100%; margin-left: 0;">
+                     <p><?= $product->description ?></p>
+               </div>
 
-            	<div class="card" style="margin-top: 0em; padding: 0.5em 0em 0em 0em; margin-bottom: 1em;">
-            	  <div class="product-info">Price</div>
+               <div class="card" style="margin-top: 0em; padding: 0.5em 0em 0em 0em; margin-bottom: 1em;">
+                 <div class="product-info">Price</div>
                   <div class="product-price">&dollar;<?= $product->price ?></div>
                </div>
                <div class="card-section">
-               	<div class="card" style="margin-top: 0em; padding: 0.5em 0em 0em 0em; margin-bottom: 1em;">
+                  <div class="card" style="margin-top: 0em; padding: 0.5em 0em 0em 0em; margin-bottom: 1em;">
                   <div class="product-info">Quantity</div>
                   <div class="form-select">
 
-                     <select>
+                     <select name="amount">
                         <!-- option[value='$']*10>{$} -->
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -73,12 +76,13 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
                      </select>
                   </div>
                  </div>
-				</div>
+            </div>
 
                <div class="card-section">
-                  <a href="product_added_to_cart.php" class="filled" style="width: 100%; margin-left: 0;">Add To Cart</a>
+                  <button type="submit" class="filled" style="width: 100%; margin-left: 0;">Add To Cart</button>
                </div>
-         </div>
+            </div>
+         </form>
       </div>
    </div>
 
@@ -89,36 +93,36 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 
 
 
-		<div class="container" style="margin-bottom: 20em;">
-			<hr>
-			<div class="container">
-			<h1>Similar Products</h1>
-			<h4>Tempore cumque ad ullam id totam explicabo voluptatibus illum inventore, dolores<br>laudantium ea repellat ex, ratione atque.</h4>
-			</div>
-			<div class="grid gap large">
-					<div class="col-xs-12 col-md-4">
-					<div class="product-image">
-                     	<img src="https://via.placeholder.com/600?text=Product" alt="">
+      <div class="container" style="margin-bottom: 20em;">
+         <hr>
+         <div class="container">
+         <h1>Similar Products</h1>
+         <h4>Tempore cumque ad ullam id totam explicabo voluptatibus illum inventore, dolores<br>laudantium ea repellat ex, ratione atque.</h4>
+         </div>
+         <div class="grid gap large">
+               <div class="col-xs-12 col-md-4">
+               <div class="product-image">
+                        <img src="https://via.placeholder.com/600?text=Product" alt="">
                   </div>
-					</div>
+               </div>
 
-					<div class="col-xs-12 col-md-4">
-					<div class="product-image">
-                     	<img src="https://via.placeholder.com/600?text=Product" alt="">
+               <div class="col-xs-12 col-md-4">
+               <div class="product-image">
+                        <img src="https://via.placeholder.com/600?text=Product" alt="">
                   </div>
-					</div>
+               </div>
 
-					<div class="col-xs-12 col-md-4">
-					<div class="product-image">
-                     	<img src="https://via.placeholder.com/600?text=Product" alt="">
-                  	</div>
-					</div>
-			</div>
+               <div class="col-xs-12 col-md-4">
+               <div class="product-image">
+                        <img src="https://via.placeholder.com/600?text=Product" alt="">
+                     </div>
+               </div>
+         </div>
 
-		</div>
-	</div>
+      </div>
+   </div>
 
-	<footer></footer>
+   <footer></footer>
 
 </body>
 </html>

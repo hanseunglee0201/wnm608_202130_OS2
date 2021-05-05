@@ -41,7 +41,7 @@ include "parts/templates.php";
 		            <h3>Bestsellers</h3>
 		         	<h2>Dinnerware</h2>
 					<p>Lorem ipsum, dolor sit amet, consectetur<br>adipisicing elit.</p>
-					<a class="button" href="productlist.php">See all</a>
+					<a class="button" href="product_list.php">See all</a>
 	         	</div>
 
 				<div class="col-xs-12 col-md-4">
@@ -70,7 +70,7 @@ include "parts/templates.php";
 		            <h3>Bestsellers</h3>
 		         	<h2>Kitchen</h2>
 					<p>Lorem ipsum, dolor sit amet, consectetur<br>adipisicing elit.</p>
-					<button class="button">See all</button>
+					<a class="button" href="product_list.php">See all</a>
 	         	</div>
 	         </div>
 	     </div> 
@@ -83,7 +83,7 @@ include "parts/templates.php";
 		            <h3>Bestsellers</h3>
 		         	<h2>Decor</h2>
 					<p>Lorem ipsum, dolor sit amet, consectetur<br>adipisicing elit.</p>
-					<button class="button">See all</button>
+					<a class="button" href="product_list.php">See all</a>
 	         	</div>
 
 				<div class="col-xs-12 col-md-4">
