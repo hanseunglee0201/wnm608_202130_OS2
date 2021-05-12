@@ -2,7 +2,7 @@
 
 include "lib/php/functions.php";
 
-pretty_dump($_POST);
+// pretty_dump($_POST);
 
 $product = MYSQLIQuery("SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 $cart_product = cartItemById($product->id);

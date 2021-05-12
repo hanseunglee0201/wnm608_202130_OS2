@@ -1,12 +1,9 @@
 <?php
 
 include "lib/php/functions.php";
+include "data/api.php";
 
-$product = MYSQLIQuery("
-   SELECT *
-   FROM `products`
-   WHERE `id` = {$_GET['id']}
-")[0];
+$product = makeStatement("product_by_id")[0];
 
 $thumbs = explode(",", $product->image_other);
 
@@ -37,7 +34,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
                   <img src="<?= $product->image_thumb ?>" />
                </div>
                <div class="image-thumbs"><?= $thumb_elements ?></div>
-      </div>
+         </div>
 
          <div class="col-xs-12 col-md-1"></div>
 
@@ -99,7 +96,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
          <h1>Similar Products</h1>
          <h4>Tempore cumque ad ullam id totam explicabo voluptatibus illum inventore, dolores<br>laudantium ea repellat ex, ratione atque.</h4>
          </div>
-         <div class="grid gap large">
+         <div class="grid gap">
                <div class="col-xs-12 col-md-4">
                <div class="product-image">
                         <img src="https://via.placeholder.com/600?text=Product" alt="">
@@ -118,7 +115,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
                      </div>
                </div>
          </div>
-
+      </div>
       </div>
    </div>
 

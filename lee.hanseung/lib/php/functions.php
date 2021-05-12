@@ -128,7 +128,9 @@ function makeCartBadge() {
 
 
 
-
+function setDefault($k,$v){
+   if(!isset($_GET[$k])) $_GET[$k] = $v;
+}
 
 
 
