@@ -19,7 +19,7 @@ include "parts/templates.php";
          <h2>Thank you for your purchase!</h2>
 
          <div>You bought these things</div>
-         <div><a href="productlist.php">Try out these things</a></div>
+         <div><a href="product_list.php">Try out these things</a></div>
       </div>
    </div>
 

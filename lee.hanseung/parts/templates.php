@@ -3,7 +3,7 @@
 function makeProductList($r,$o) {
 return $r.<<<HTML
 <div class="col-xs-12 col-sm-6 col-md-4">
-      <a href="dinnerware_item.php?id=$o->id" class="product1">
+      <a href="product_item.php?id=$o->id" class="product1">
             <div class="product-image">
                <img src="$o->image_thumb" alt="product">
             </div>

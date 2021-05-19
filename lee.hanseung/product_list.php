@@ -115,10 +115,11 @@ $_SESSION['num'] = isset($_SESSION['num']) ?
          ?>
          </div>
 
-
-
       </div>
 
+      <div class="container">
+         <a href="admin">Product Admin</a>
+      </div>
 
    <footer></footer>
 </body>
