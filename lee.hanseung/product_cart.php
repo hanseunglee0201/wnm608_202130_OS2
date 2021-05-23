@@ -21,9 +21,9 @@ $cart = getCartItems();
 
    <div class="container">
    	<div class="grid gap">
-   		<div class="col-xs-12 col-md-8">
-   			<div class="card soft flat">
-
+   		<div class="col-xs-12 col-md-6">
+   			<div class="card">
+   				<div class="product-title" style="font-size: 2.1em; font-weight: 300;">My Cart</div>
 		         <?php
 
 		        if(!count($cart)) {
@@ -36,15 +36,11 @@ $cart = getCartItems();
 		         ?>
      	 	</div>
   		</div>
-   		<div class="col-xs-12 col-md-4">
-			<div class="card soft flat">
-   				<div class="card-section">
-		         <h2>Confirm Cart</h2>
-		     	</div>
+
+   		<div class="col-xs-12 col-md-6">
+			<div class="card" style="background-color: var(--color-light);">
 		     	<?= cartTotals() ?>
-			 	 <div class="card-section">
-		            <a class="form-button" href="product_checkout.php">Checkout</a>
-		         </div>
+		            <a class="button1 filled" href="product_checkout.php" style="width: 85%; text-align: center; margin-top: 1em;">Checkout</a>
      	 	</div>
    		</div>
    	</div>

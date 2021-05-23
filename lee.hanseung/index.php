@@ -23,10 +23,10 @@ include "parts/templates.php";
 
 
 	<div class="container">
-		<h1>dolor sit amet, consectetur.</h1>
-		<h4>Tempore cumque ad ullam id totam explicabo voluptatibus illum inventore, dolores<br>laudantium ea repellat ex, ratione atque.</h4>
+		<h1>Goods of timeless and beautiful design</h1>
+		<h4>Since 2010 in California, Our products are made with thoughtfulness, honesty and pride. With the delicate<br>touch of professionals, our designs bring pure joy to your daily life and business.</h4>
 		<div class="center">
-			<button class="button1">Our story</button>
+			<button class="button1">About Us</button>
 		</div>
 	</div>
 
@@ -36,13 +36,16 @@ include "parts/templates.php";
 	<div class="container">
 	     <div class="card">
 			<div class="grid gap">
-	         	<div class="col-xs-12 col-md-4">
+	         	<div class="col-xs-12 col-md-3">
 		            
 		            <h3>Bestsellers</h3>
 		         	<h2>Dinnerware</h2>
-					<p>Lorem ipsum, dolor sit amet, consectetur<br>adipisicing elit.</p>
+					<p>Enjoy every day, and any special day with timeless, durable, handcrafted ceramic dinnerware.</p>
 					<a class="button" href="product_list.php">See all</a>
+
 	         	</div>
+
+	         	<div class="col-xs-12 col-md-1"></div>
 
 				<div class="col-xs-12 col-md-4">
 						<img class="categoryimage" src="https://cdn.shopify.com/s/files/1/2116/7717/files/DinnerwareSets_PLP_H_Image_03_2x_1cf25b68-bab7-4e94-b91e-3bf28a88b8ae.jpg?17658252497319503316" alt="">
@@ -69,7 +72,7 @@ include "parts/templates.php";
 				<div class="col-xs-12 col-md-3">
 		            <h3>Bestsellers</h3>
 		         	<h2>Kitchen</h2>
-					<p>Lorem ipsum, dolor sit amet, consectetur<br>adipisicing elit.</p>
+					<p>Products carefully crafted to fit the way we eat, live and connect. Enjoy!</p>
 					<a class="button" href="product_list.php">See all</a>
 	         	</div>
 	         </div>
@@ -79,12 +82,14 @@ include "parts/templates.php";
 
 		<div class="card">
 			<div class="grid gap">
-	         	<div class="col-xs-12 col-md-4">
+	         	<div class="col-xs-12 col-md-3">
 		            <h3>Bestsellers</h3>
 		         	<h2>Decor</h2>
-					<p>Lorem ipsum, dolor sit amet, consectetur<br>adipisicing elit.</p>
+					<p>We create a beautiful and livable environment using well-designed objects that respect the purpose of the space.</p>
 					<a class="button" href="product_list.php">See all</a>
 	         	</div>
+
+	         	<div class="col-xs-12 col-md-1"></div>
 
 				<div class="col-xs-12 col-md-4">
 						<img class="categoryimage" src="https://shop.static.ingka.ikea.com/category-images/Category_vases.jpg?imwidth=500" alt="">
@@ -94,7 +99,7 @@ include "parts/templates.php";
 				</div>
 
 	          </div>
-	         </div>
+	     </div>
 	 </div> 
 
 
@@ -104,9 +109,9 @@ include "parts/templates.php";
 			<!-- <div class="container card">
 					<article id="article3" class="card content center">
 						<h3 class="h3center">Our story</h3>-->
-						<p style="font-size: 2.5em; text-align: center; font-weight: 300; line-height: 1.em">"tempore cumque ad ullam id totam explicabo voluptatibus<br>illum inventore, dolores."</p>
+						<p style="font-size: 2.5em; text-align: center; font-weight: 300; line-height: 1.em">"I have always wished I could learn to be a potter. I love collecting ceramics; it would be so fulfilling to create something lovely."</p>
 						<div class="article-body">
-							<p style="font-size: 1em; text-align: center; font-weight: 300">dolor sit amet</p>
+							<p style="font-size: 1em; text-align: center; font-weight: 300">— Julie Andrews</p>
 						</div>
 		</div>
 		</div>

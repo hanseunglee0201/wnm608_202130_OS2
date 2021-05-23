@@ -27,7 +27,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 
 
 
-<div class="container" style="margin-top: 10em; margin-bottom: 20em;">
+<div class="container" style="margin-top: 8em; margin-bottom: 10em;">
       <div class="grid gap product-display" style="margin-bottom: 10em;">
          <div class="col-xs-12 col-md-6">
                <div class="image-main">
@@ -39,7 +39,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
          <div class="col-xs-12 col-md-1"></div>
 
          <div class="col-xs-12 col-md-5">
-            <form class="card soft flat" action="product_actions.php?crud=add-to-cart" method="post">
+            <form action="product_actions.php?crud=add-to-cart" method="post">
                <input type="hidden" name="id" value="<?= $product->id ?>">
                <div class="card-section">
                     <h3><?= $product->category ?></h3>
@@ -50,12 +50,16 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
                </div>
 
                <div class="card" style="margin-top: 0em; padding: 0.5em 0em 0em 0em; margin-bottom: 1em;">
-                 <div class="product-info">Price</div>
+                 <div class="product-info">PRICE</div>
                   <div class="product-price">&dollar;<?= $product->price ?></div>
+               </div>
+               <div class="card" style="margin-top: 0em; padding: 0.5em 0em 0em 0em; margin-bottom: 1em;">
+                 <div class="product-info">SIZE</div>
+                  <div class="product-price">&dollar;<?= $product->size ?></div>
                </div>
                <div class="card-section">
                   <div class="card" style="margin-top: 0em; padding: 0.5em 0em 0em 0em; margin-bottom: 1em;">
-                  <div class="product-info">Quantity</div>
+                  <div class="product-info">QUANTITY</div>
                   <div class="form-select">
 
                      <select name="amount">
@@ -82,44 +86,54 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
          </form>
       </div>
    </div>
+</div>
 
 
+<div style="background-color: var(--color-light); padding-bottom: 10em;">
+   <div class="container">
+         <div class="product-info" style="padding: 8em 0 6em 0; text-align: center; font-weight: 600; letter-spacing: 0.08em;">CONTINUE SHOPPING</div>
 
-
-
-
-
-
-      <div class="container" style="margin-bottom: 20em;">
-         <hr>
-         <div class="container">
-         <h1>Similar Products</h1>
-         <h4>Tempore cumque ad ullam id totam explicabo voluptatibus illum inventore, dolores<br>laudantium ea repellat ex, ratione atque.</h4>
-         </div>
-         <div class="grid gap">
-               <div class="col-xs-12 col-md-4">
-               <div class="product-image">
-                        <img src="https://via.placeholder.com/600?text=Product" alt="">
+         <div class="grid gap product-list">
+            <div class="col-xs-12 col-md-4">
+               <a href="#" class="product1">
+                  <div class="product-image">
+                     <img src="img/decor_vase_2.png" alt="">
                   </div>
-               </div>
-
-               <div class="col-xs-12 col-md-4">
-               <div class="product-image">
-                        <img src="https://via.placeholder.com/600?text=Product" alt="">
+                  <figcaption class="product-caption" style="background-color: var(--color-light);">
+                     <div class="product-title">Multi Stem Vase in Dark Moon Horizon</div>
+                     <div class="product-price">&dollar;170</div>
+                  </figcaption>
+               </a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <a href="#" class="product1">
+                  <div class="product-image">
+                     <img src="img/decor_pitcher_1.png" alt="">
                   </div>
-               </div>
-
-               <div class="col-xs-12 col-md-4">
-               <div class="product-image">
-                        <img src="https://via.placeholder.com/600?text=Product" alt="">
-                     </div>
-               </div>
+                  <figcaption class="product-caption" style="background-color: var(--color-light);">
+                     <div class="product-title">Small Pitcher in Light Grey Whale Gradient</div>
+                     <div class="product-price">&dollar;262</div>
+                  </figcaption>
+               </a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <a href="#" class="product1">
+                  <div class="product-image">
+                     <img src="img/kitchen_cuttingboard_2.png" alt="">
+                  </div>
+                  <figcaption class="product-caption" style="background-color: var(--color-light);">
+                     <div class="product-title">Round Walnut Cutting Board with Leather Tab</div>
+                     <div class="product-price">&dollar;164</div>
+                  </figcaption>
+               </a>
+            </div>
          </div>
-      </div>
-      </div>
+
    </div>
 
-   <footer></footer>
+</div>
+
+<footer></footer>
 
 </body>
 </html>

@@ -136,6 +136,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 });
 $addoredit = $id=="new" ? 'Add' : 'Edit';
 $createorupdate = $id=="new" ? 'create' : 'update';
+$showvisitlink = $id!="new" ? "<div><a href='product_item.php?id=$id' class='form-button'>Visit</a></div>" : "";
 
 echo <<<HTML
 <div class="grid gap">
@@ -148,6 +149,7 @@ echo <<<HTML
 </nav>
 </div>
 </div>
+
 <div class="col-xs-12 col-md-4">
    <div class="card soft">
       <h2>$product->name</h2>
@@ -173,9 +175,10 @@ echo <<<HTML
          <strong>Image Other</strong>
          <div class="image-thumbs">$thumb_elements</div>
       </div>
-      <div><a href="product_item.php?id=$product->id" class="form-button">Visit</a></div>
+      $showvisitlink
    </div>
 </div>
+
 <form class="col-xs-12 col-md-8" method="post" action="{$_SERVER['PHP_SELF']}?id=$id&crud=$createorupdate">
    <div class="card soft">
       <h2>$addoredit Product</h2>

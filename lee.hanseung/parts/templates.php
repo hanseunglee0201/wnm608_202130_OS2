@@ -8,9 +8,8 @@ return $r.<<<HTML
                <img src="$o->image_thumb" alt="product">
             </div>
                <figcaption class="product-caption">
-                     <div class="product-price">&dollar;$o->price</div>
                      <div class="product-title">$o->name</div>
-                     <div class="product-info">Size / Color</div>
+                     <div class="product-price">&dollar;$o->price</div>
                </figcaption>
       </a>
 </div>
@@ -35,8 +34,8 @@ return $r.<<<HTML
    <div class="flex-none image-thumbs">
       <img src="$o->image_thumb">
    </div>
-   <div class="flex-stretch">
-      <strong>$o->name</strong>
+   <div class="flex-none">
+      <div class="product-title">$o->name</div>
       <form action="product_actions.php?crud=delete-cart-item" method="post" style="font-size:0.8em">
          <input type="hidden" name="id" value="$o->id">
          <input type="submit" value="delete" class="form-button inline">
@@ -83,24 +82,26 @@ $tax = number_format($cartprice*0.0275,2,".","");
 $taxed = number_format($cartprice*1.0275,2,".","");
 
 return <<<HTML
-            <div class="card-section display-flex">
-               <div class="flex-stretch">
-                  <strong>Sub Total</strong>
-               </div>
-               <div class="flex-none">&dollar;$pricefixed</div>
+            <div class="container" style="width: 85%;">
+                  <div class="display-flex" style="padding-bottom: 1.5em;">
+                     <div class="flex-stretch">
+                        <product-title >Sub Total</product>
+                     </div>
+                     <div class="flex-none">&dollar;$pricefixed</div>
+                  </div>
+                   <div class="display-flex" style="padding-bottom: 1.5em;">
+                     <div class="flex-stretch">
+                        <product-title>Taxes</product>
+                     </div>
+                     <div class="flex-none">&dollar;$tax</div>
+                   </div>
+                  <div class="display-flex" style="padding-bottom: 1.5em;">
+                     <div class="flex-stretch">
+                        <product-title>Total</product>
+                     </div>
+                     <div class="flex-none">&dollar;$taxed</div>
+                   </div>
             </div>
-             <div class="card-section display-flex">
-               <div class="flex-stretch">
-                  <strong>Taxes</strong>
-               </div>
-               <div class="flex-none">&dollar;$tax</div>
-             </div>
-            <div class="card-section display-flex">
-               <div class="flex-stretch">
-                  <strong>Total</strong>
-               </div>
-               <div class="flex-none">&dollar;$taxed</div>
-             </div>
 HTML;
 
 }

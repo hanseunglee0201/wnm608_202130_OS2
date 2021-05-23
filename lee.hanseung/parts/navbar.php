@@ -11,8 +11,8 @@
 					<li><a href="about.php">About</a></li>
 					<li><a href="product_cart.php">
 						<span>Cart</span>
-						<span class="badge"><?= makeCartBadge() ?></span>
-					</a></li>
+		                <span class="badge"><?= makeCartBadge() ?></span>
+		            </a></li>
 				</ul>
 			</nav>
 		</div>

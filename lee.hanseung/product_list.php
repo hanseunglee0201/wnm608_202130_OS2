@@ -59,14 +59,17 @@ $_SESSION['num'] = isset($_SESSION['num']) ?
 
 	<div class="container" style="margin-top: 9em;">
 		<div class="card" style="margin-bottom: 0em; padding: 2em 0 0 0;">
-         <div class="grid gap product-display" style="margin-bottom: 10em;">
+         <div class="grid gap product-display" style="margin-bottom: 3em;">
             <div class="col-xs-12 col-md-6">
-                  <h1 class="h1typography" style="padding: 0 0 0 0;">Products</h1>
-                  <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown printer took a galley of type<br>and scrambled it to make a type specimen book.</p>
+                  <h1 class="h1typography" style="padding: 0 0 0 0;">Explore our products</h1>
+                  <p>Timeless and durable handmade ceramic dinnerware, kitchen and accessories-beautiful to look, easy to hold, and proudly crafted.</p>
             </div>
-            <div class="col-xs-12 col-md-3"></div>
-            <div class="col-xs-12 col-md-3">
-               
+
+            <div class="col-xs-12 col-md-6"></div>
+         </div>
+
+         <div class="grid gap" style="margin-bottom: -0.5em;">
+            <div class="col-xs-12 col-md-8"> 
                <form action="product_list.php" method="get" class="hotdog" style="margin-top: 0.5em">
                   <input type="hidden" name="t" value="search">
                   <input type="hidden" name="s" value="<?=$_GET['s']?>">
@@ -74,13 +77,9 @@ $_SESSION['num'] = isset($_SESSION['num']) ?
                   <input type="hidden" name="l" value="<?=$_GET['l']?>">
                   <input type="search" name="s" placeholder="Search" value="<?= $_GET['s'] ?>">
                </form>
+            </div>
 
-               <div>
-                  <a href="product_list.php?t=products_by_category&category=dinnerware&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="form-button inline">Dinnerware</a>
-                  <a href="product_list.php?t=products_by_category&category=kitchen&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="form-button inline">Kitchen</a>
-                  <a href="product_list.php?t=products_by_category&category=decor&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="form-button inline">Decor</a>
-               </div> 
-
+            <div class="col-xs-12 col-md-4">
                <form action="product_list.php" method="get">
                   <input type="hidden" name="t" value="search">
                   <input type="hidden" name="s" value="<?=$_GET['s']?>">
@@ -93,6 +92,14 @@ $_SESSION['num'] = isset($_SESSION['num']) ?
                      </select>
                   </div>
                </form>
+            </div>
+         </div>
+
+               <div>
+                  <a href="product_list.php?t=products_by_category&category=dinnerware&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="form-button inline">Dinnerware</a>
+                  <a href="product_list.php?t=products_by_category&category=kitchen&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="form-button inline">Kitchen</a>
+                  <a href="product_list.php?t=products_by_category&category=decor&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="form-button inline">Decor</a>
+               </div>
 
             </div>
    		</div>	
@@ -100,7 +107,7 @@ $_SESSION['num'] = isset($_SESSION['num']) ?
 	</div>
 
 
-	  <div class="container" id="product" style="margin-bottom: 10em;">
+	  <div class="container" id="product" style="margin-bottom: 10em; margin-top: 5em;">
 
          <div class="grid gap product-list">
 

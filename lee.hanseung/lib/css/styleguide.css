@@ -11,6 +11,7 @@
 
 	--color-white:#fff;
 	--color-highlight:#ff8000;
+	--color-light:#f1f0e5;
 	--color-dark:#4B392A;
 	--color-dark-black:#333333;
 	--color-black:#252525;
@@ -95,7 +96,7 @@ h3 {text-align: left;
 		font-family: var(--sans-serif);
 		font-size: 0.95em;
 		font-weight: 400;
-		margin-bottom: 0.1em;
+		margin-bottom: -0.3em;
 		line-height: 1.5em;
 		color: #4B392A;
 	}
@@ -142,7 +143,7 @@ a {
 
 /* LAYOUT CLASSES (this is not for design, it's for structure.) */
 .container {
-	max-width: 1500px;
+	max-width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -242,7 +243,7 @@ a {
 	background-position: center;
 	background-attachment: fixed;
 
-	height: 45vh; /*vh is view height. */
+	height: 55vh; /*vh is view height. */
 }
 
 .center {
@@ -292,9 +293,10 @@ a {
 	border-radius: 0.2em;
 	padding: 1.3em 4em;
 	margin-left: 0;
-	margin-top: 2.5em;
+	margin-top: 1.7em;
 	display: inline-block;
 	background-color: var(--color-neutral-light);
+	font-size: 0.85em;
 }
 
 .filled {
@@ -388,7 +390,7 @@ img {
 /* CARD */
 .card {
 	background-color: var(--color-neutral-light);
-	padding: 3.5em 0em 0em 0em;
+	padding: 2em 0em 0em 0em;
 	margin-bottom: 10em;
 	margin-top: 6em;
 	position: relative;
@@ -512,7 +514,7 @@ img {
 }*/
 
 .card-section~.card-section {
-    border-top:1px solid var(--color-neutral-light);
+    border-top:0.5px solid var(--color-neutral-medium);
 }
 
 
@@ -728,7 +730,7 @@ hr {
    border-radius:0.3em;
    display:inline-block;
    width:100%;
-   height: 50px;
+   height: 42px;
    background-color:var(--color-neutral-light);
    color:var(--color-neutral-dark);
    padding:0.5em 1em;

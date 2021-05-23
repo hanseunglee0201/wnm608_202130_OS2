@@ -135,11 +135,7 @@ $cart = getCartItems();
          </div>
 
 
-
-
          <div class="col-xs-12 col-md-1"></div>
-
-
 
 
 
@@ -151,7 +147,8 @@ $cart = getCartItems();
             ?>
 
                <div class="card-section">
-                  <button type="submit" class="filled" style="width: 100%; margin-left: 0;" href="product_actions.php?crud=reset-cart">PLACE ORDER</button>
+                  <a type="submit" class="filled" style="width: 100%; margin-left: 0;" a href="product_actions.php?crud=reset-cart">PLACE ORDER</a>
+                  <!-- <button type="submit" class="filled" style="width: 100%; margin-left: 0;" a href="product_actions.php?crud=reset-cart">PLACE ORDER</button> -->
                </div>
             </div>
          </div>
