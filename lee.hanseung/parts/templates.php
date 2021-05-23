@@ -30,29 +30,41 @@ function makeCartList($r,$o) {
 $totalfixed = number_format($o->total,2,'.','');
 $amountselect = selectAmount($o->amount,10);
 return $r.<<<HTML
-<div class="display-flex card-section">
-   <div class="flex-none image-thumbs">
-      <img src="$o->image_thumb">
-   </div>
-   <div class="flex-none">
-      <div class="product-title">$o->name</div>
-      <form action="product_actions.php?crud=delete-cart-item" method="post" style="font-size:0.8em">
-         <input type="hidden" name="id" value="$o->id">
-         <input type="submit" value="delete" class="form-button inline">
-      </form>
-   </div>
-   <div class="flex-none">
-      <div>&dollar;$totalfixed</div>
-      <form action="product_actions.php?crud=update-cart-item" method="post" onchange="this.submit()" style="font-size:0.8em">
-         <input type="hidden" name="id" value="$o->id">
-         <div class="form-select">
-            $amountselect
+<div class="grid gap">
+   <div class="col-xs-12 col-md-2">
+         <div class="flex-none image-thumbs">
+            <img src="$o->image_thumb">
          </div>
-      </form>
+   </div>
+
+   <div class="col-xs-12 col-md-4">
+            <div class="product-title">$o->name</div>
+   </div>
+
+   <div class="col-xs-12 col-md-2">
+            <form action="product_actions.php?crud=update-cart-item" method="post" onchange="this.submit()" style="font-size:0.8em; width: 50%;">
+               <input type="hidden" name="id" value="$o->id">
+               <div class="form-select">
+                  $amountselect
+               </div>
+            </form>
+   </div>
+
+   <div class="col-xs-12 col-md-1">
+            <div>&dollar;$totalfixed</div>
+   </div>
+
+   <div class="col-xs-12 col-md-3">
+            <form action="product_actions.php?crud=delete-cart-item" method="post" style="font-size:0.9em; text-align: right;" >
+               <input type="hidden" name="id" value="$o->id">
+               <input type="submit" value="Remove" class="form-button inline">
+            </form>
    </div>
 </div>
 HTML;
 }
+
+
 
 function makeCondensedCartList($r,$o) {
 $totalfixed = number_format($o->total,2,'.','');
