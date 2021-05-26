@@ -33,19 +33,15 @@ $cart_product = cartItemById($product->id);
 
 
 
-            <div class="display-flex" style="padding-top: 2em;">
-               <div class="grid gap">
-                     <div class="col-xs-12 col-md-6">
-                        <div class="flex-none"><a class="button" href="javascript:window.history.back();" style="margin-right: 2em; margin-top: 0em;">Back To Product</a></div>
-                        <!-- <div class="flex-stretch"></div> -->
-                     </div>
-                        <div class="flex-none" style="border-left: solid 0.1em var(--color-neutral-medium); padding-right: 1.5em;" ></div>
+            <!-- <div class="display-flex" style="padding-top: 2em;"> -->
+               <div class="grid gap" style="margin-top: 0.5em;">
+                     <div class="col-xs-12 col-md-3 flex-none"><a class="button" href="javascript:window.history.back();">Back To Product</a></div>
 
-                     <div class="col-xs-12 col-md-6">
-                        <div class="flex-none"><a class="button" href="product_list.php" style="margin-top: 0em;">Continue Shopping</a></div>
+                     <div class="col-xs-12 col-md-9">
+                        <div class="flex-none" style="margin-right: 0;"><a class="button" href="product_list.php">Continue Shopping</a></div>
                      </div>
                </div>
-            </div>
+            <!-- </div> -->
             <?
          }
          ?>
@@ -97,5 +93,6 @@ $cart_product = cartItemById($product->id);
    </div>
 </div>
 
+<?php include "parts/footer.php" ?>
 </body>
 </html>

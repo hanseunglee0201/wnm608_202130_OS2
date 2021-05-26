@@ -57,25 +57,46 @@ $cart = getCartItems();
        	 	</div>
     		<!-- </div> -->
       <!-- </div> -->
+   </div>
 
+
+
+<div style="background-color: var(--color-light); padding-bottom: 10em;">
+   <div class="container">
     <div class="grid gap">
-   		<div class="col-xs-12 col-md-6">
-			<div class="card" style="background-color: var(--color-light);">
-		     	<?= cartTotals() ?>
-		            <a class="button1 filled" href="product_checkout.php" style="width: 85%; text-align: center; margin-top: 1em;">Checkout</a>
-     	 	</div>
-   		</div>
-      <div class="col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-5">
       <div class="card" style="background-color: var(--color-light);">
-          <?= cartTotals() ?>
-                <a class="button1 filled" href="product_checkout.php" style="width: 85%; text-align: center; margin-top: 1em;">Checkout</a>
+          <div class="product-info">IS THIS A GIFT?</div>
+          <form>
+            <input type="text" placeholder="Add your message here." class="form-input" style="height: 150px; font-size: 0.9em;">
+          </form>
         </div>
       </div>
-   	</div>
 
+      <div class="col-xs-12 col-md-1"></div>
 
+      <div class="col-xs-12 col-md-6">
+      <div class="card" style="background-color: var(--color-light);">
+        <div class="grid gap">
+          <div class="col-xs-12 col-md-9">
+            <form>
+              <input type="text" placeholder="Gift card or discount code" class="form-input" style="font-size: 0.9em; margin-top: 2.2em;"> 
+            </form>
+          </div>
+          <div class="col-xs-12 col-md-3">
+                    <button type="submit" class="filled" style="width: 100%; margin-left: 0; margin-top: 31px; height: 50px;">Apply</button>
+          </div>
+        </div>
 
+          <?= cartTotals() ?>
+                <a class="button1 filled" href="product_checkout.php" style="width: 100%; text-align: center; margin-top: 1em; margin-left: 0;">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-   </div>
+<?php include "parts/footer.php" ?>
+
 </body>
 </html>

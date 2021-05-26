@@ -112,14 +112,14 @@ switch(@$_GET['crud']) {
 function productListItem($r,$product) {
 return $r.<<<HTML
 <div class="card-section">
-   <div class="display-flex">
+   <div class="display-flex" style="padding-top: 1em;">
       <div class="flex-none image-thumbs">
          <img src="$product->image_thumb">
       </div>
-      <div class="flex-stretch">$product->name</div>
+      <div class="flex-stretch" style="padding-top: 1em;">$product->name</div>
       <div class="flex-none">
-         <a href="{$_SERVER['PHP_SELF']}?id=$product->id" class="form-button">Edit</a>
-         <a href="product_item.php?id=$product->id" class="form-button">Visit</a>
+         <a href="{$_SERVER['PHP_SELF']}?id=$product->id" class="form-button inline" style="margin-right: 0.5em;">Edit</a>
+         <a href="product_item.php?id=$product->id" class="form-button inline">Visit</a>
       </div>
    </div>
 </div>
@@ -141,11 +141,11 @@ $showvisitlink = $id!="new" ? "<div><a href='product_item.php?id=$id' class='for
 echo <<<HTML
 <div class="grid gap">
 <div class="col-xs-12">
-<div class="card soft">
+<div class="card" style="margin-bottom: 0em; margin-top: 4em;">
 <nav class="nav pills display-flex">
-   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}"><img src="img/icon/arrow-left.svg" class="icon" style="font-size:1.5em"></a></div>
+   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}"><img src="img/arrow-left.svg" class="icon" style="font-size:1.3em"></a></div>
    <div class="flex-stretch"></div>
-   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete"><img src="img/icon/trash.svg" class="icon" style="font-size:1.5em"></a></div>
+   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete"><img src="img/trash.svg" class="icon" style="font-size:1.3em"></a></div>
 </nav>
 </div>
 </div>
@@ -207,10 +207,12 @@ echo <<<HTML
          <label class="form-label" for="product-image_other">Image Other</label>
          <input class="form-input" type="text" id="product-image_other" name="product-image_other" value="$product->image_other">
       </div>
-   </div>
+
       <div class="form-control">
-         <input class="form-button" type="submit" value="Submit">
-      </div>
+         <input class="filled" type="submit" value="Submit" style="width: 100%; margin-left: 0em;">
+      </div>      
+   </div>
+
    </div>
 </form>
 </div>

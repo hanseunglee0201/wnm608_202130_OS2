@@ -22,19 +22,19 @@ include "parts/templates.php";
 	</div>
 
 
-	<div class="container">
+	<div class="container" style="margin-bottom: 1.5em;">
 		<h1>Goods of timeless and beautiful design</h1>
 		<h4>Since 2010 in California, Our products are made with thoughtfulness, honesty and pride. With the delicate<br>touch of professionals, our designs bring pure joy to your daily life and business.</h4>
-		<div class="center">
+		<!-- <div class="center">
 			<button class="button1">About Us</button>
-		</div>
+		</div> -->
 	</div>
 
 
 
 
 	<div class="container">
-	     <div class="card">
+	     <div class="card" style="margin-bottom: 0em;">
 			<div class="grid gap">
 	         	<div class="col-xs-12 col-md-3">
 		            
@@ -48,23 +48,23 @@ include "parts/templates.php";
 	         	<div class="col-xs-12 col-md-1"></div>
 
 				<div class="col-xs-12 col-md-4">
-						<img class="categoryimage" src="https://cdn.shopify.com/s/files/1/2116/7717/files/DinnerwareSets_PLP_H_Image_03_2x_1cf25b68-bab7-4e94-b91e-3bf28a88b8ae.jpg?17658252497319503316" alt="">
+						<img class="categoryimage" src="img/dinnerware_plate_3.png" alt="">
 	            </div>
 	            <div class="col-xs-12 col-md-4">
-						<img class="categoryimage" src="https://cdn.shopify.com/s/files/1/2116/7717/files/DinnerwareSets_PLP_H_Image_03_2x_1cf25b68-bab7-4e94-b91e-3bf28a88b8ae.jpg?17658252497319503316" alt="">
+						<img class="categoryimage" src="img/dinnerware_bowl_2.png" alt="">
 	            </div>
 	         </div>
 	     </div>    
 
 
-	     <div class="card">
+	     <div class="card" style="margin-bottom: 0em;">
 			 <div class="grid gap">
 			 	<div class="col-xs-12 col-md-4">
-						<img class="categoryimage" src="https://res.cloudinary.com/cloudname-heathceramics/image/fetch/q_auto:best,f_auto,c_fit,w_1680/https://mm.heathapps.com/wp-content/uploads/2019/09/Heath-Flatware-Amber-PLP.jpg" alt="">
+						<img class="categoryimage" src="img/kitchen_cuttingboard_1.png" alt="">
 	            </div>
 
 	            <div class="col-xs-12 col-md-4">
-						<img class="categoryimage" src="https://res.cloudinary.com/cloudname-heathceramics/image/fetch/q_auto:best,f_auto,c_fit,w_1680/https://mm.heathapps.com/wp-content/uploads/2019/09/Heath-Flatware-Amber-PLP.jpg" alt="">
+						<img class="categoryimage" src="img/kitchen_flatware_1.png" alt="">
 	            </div>
 
 	            <div class="col-xs-12 col-md-1"></div>
@@ -80,7 +80,7 @@ include "parts/templates.php";
 
 
 
-		<div class="card">
+		<div class="card" style="margin-bottom: 0em;">
 			<div class="grid gap">
 	         	<div class="col-xs-12 col-md-3">
 		            <h3>Bestsellers</h3>
@@ -92,10 +92,10 @@ include "parts/templates.php";
 	         	<div class="col-xs-12 col-md-1"></div>
 
 				<div class="col-xs-12 col-md-4">
-						<img class="categoryimage" src="https://shop.static.ingka.ikea.com/category-images/Category_vases.jpg?imwidth=500" alt="">
+						<img class="categoryimage" src="img/decor_vase_1.png" alt="">
 				</div>
 				<div class="col-xs-12 col-md-4">
-						<img class="categoryimage" src="https://shop.static.ingka.ikea.com/category-images/Category_vases.jpg?imwidth=500" alt="">
+						<img class="categoryimage" src="img/decor_vase_4.png" alt="">
 				</div>
 
 	          </div>
@@ -117,7 +117,8 @@ include "parts/templates.php";
 		</div>
 	 <img src="img/making.jpg" alt="">
 
-	 <footer></footer>
+
+	<?php include "parts/footer.php" ?>
 
 </body>
 </html>

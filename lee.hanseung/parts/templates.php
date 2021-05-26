@@ -30,7 +30,7 @@ function makeCartList($r,$o) {
 $totalfixed = number_format($o->total,2,'.','');
 $amountselect = selectAmount($o->amount,10);
 return $r.<<<HTML
-<div class="grid gap">
+<div class="grid gap" style="margin-bottom: 1.5em;">
    <div class="col-xs-12 col-md-2">
          <div class="flex-none image-thumbs">
             <img src="$o->image_thumb">
@@ -94,10 +94,10 @@ $tax = number_format($cartprice*0.0275,2,".","");
 $taxed = number_format($cartprice*1.0275,2,".","");
 
 return <<<HTML
-            <div class="container" style="width: 85%;">
-                  <div class="display-flex" style="padding-bottom: 1.5em;">
+            <div class="container" style="width: 99%; padding-top: 2em;">
+                  <div class="display-flex" style="padding-bottom: 1.5em; padding-top: 1.5em; border-top: 0.1em solid #C0BEAC;">
                      <div class="flex-stretch">
-                        <product-title >Sub Total</product>
+                        <product-title>Sub Total</product>
                      </div>
                      <div class="flex-none">&dollar;$pricefixed</div>
                   </div>

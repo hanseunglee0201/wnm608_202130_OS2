@@ -125,10 +125,10 @@ $_SESSION['num'] = isset($_SESSION['num']) ?
       </div>
 
       <div class="container">
-         <a href="admin">Product Admin</a>
+         <a class="button" href="admin" style="margin-bottom: 1em;">Product Admin</a>
       </div>
 
-   <footer></footer>
+<?php include "parts/footer.php" ?>
 </body>
 </html>
 

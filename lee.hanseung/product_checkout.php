@@ -155,28 +155,7 @@ $cart = getCartItems();
       </div>
    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<?php include "parts/footer.php" ?>
 
 
 </body>

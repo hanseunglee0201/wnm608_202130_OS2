@@ -14,14 +14,16 @@ include "parts/templates.php";
 <body>
 	<?php include "parts/navbar.php" ?>
 
-   <div class="container">
-      <div class="card soft">
-         <h2>Thank you for your purchase!</h2>
-
-         <div>You bought these things</div>
-         <div><a href="product_list.php">Try out these things</a></div>
+   <div class="container" style="margin-bottom: 41em;">
+      <div class="card" style="margin-bottom: 0em; padding: 2em 0 0 0;">
+         <h1 class="h1typography" style="padding: 0 0 0 0;">Payment confirmed</h1>
+            <p>Thank you, we’ve sent your order confirmation email with all the details.</p>
+            <a class="button" href="product_list.php">Continue shopping</a>
       </div>
    </div>
+
+
+   <?php include "parts/footer.php" ?>
 
 </body>
 </html>

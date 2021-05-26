@@ -661,7 +661,6 @@ hr {
    display:inline-block;
    width:100%;
    border-width:0;
-   background-color:var(--color-neutral-light);
    padding:0.5em 1em;
    border-radius:0.3em;
    font:inherit;
@@ -689,6 +688,16 @@ hr {
 }
 .form-button.inline {
    width:initial;
+   border: 0.1em solid #C0BEAC;
+   border-radius: 0.2em;
+   margin-left: 0em;
+   display: inline-block;
+   background-color: var(--color-neutral-light);
+   font-size: 0.85em; 
+}
+.form-button.inline:hover {
+   background-color: #4B392A;
+   color: white;
 }
 
 

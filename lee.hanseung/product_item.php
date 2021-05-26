@@ -33,7 +33,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
                <div class="image-main">
                   <img src="<?= $product->image_thumb ?>" />
                </div>
-               <div class="image-thumbs"><?= $thumb_elements ?></div>
+               <!-- <div class="image-thumbs"><?= $thumb_elements ?></div> -->
          </div>
 
          <div class="col-xs-12 col-md-1"></div>
@@ -93,6 +93,12 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
    <div class="container">
          <div class="product-info" style="padding: 8em 0 6em 0; text-align: center; font-weight: 600; letter-spacing: 0.08em;">CONTINUE SHOPPING</div>
 
+
+
+
+
+
+
          <div class="grid gap product-list">
             <div class="col-xs-12 col-md-4">
                <a href="#" class="product1">
@@ -133,7 +139,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 
 </div>
 
-<footer></footer>
+<?php include "parts/footer.php" ?>
 
 </body>
 </html>
