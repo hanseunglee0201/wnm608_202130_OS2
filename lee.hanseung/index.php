@@ -25,9 +25,9 @@ include "parts/templates.php";
 	<div class="container" style="margin-bottom: 1.5em;">
 		<h1>Goods of timeless and beautiful design</h1>
 		<h4>Since 2010 in California, Our products are made with thoughtfulness, honesty and pride. With the delicate<br>touch of professionals, our designs bring pure joy to your daily life and business.</h4>
-		<!-- <div class="center">
-			<button class="button1">About Us</button>
-		</div> -->
+		<div class="center">
+			<a class="button1" href="about.php" style="font-size: 0.9em;">About Us</a>
+		</div>
 	</div>
 
 

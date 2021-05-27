@@ -14,9 +14,9 @@ $empty_object = (object) [
    "name"=>"Large Mug",
    "price"=>"41",
    "category"=>"dinnerware",
-   "image_other"=>"img/dinnerware_mug.png",
-   "image_thumb"=>"img/dinnerware_mug_m.png",
-   "description"=>"the Large Mug has quickly become one of our best sellers and a firm favorite with tea and coffee drinkers.",
+   "image_other"=>"img/dinnerware_mug_m.png",
+   "image_thumb"=>"img/dinnerware_mug.png",
+   "description"=>"The Large Mug has quickly become one of our best sellers and a firm favorite with tea and coffee drinkers. Guaranteed to brighten even the darkest of Monday mornings, and at home in any of our dinnerware sets.",
 ];
 
 

@@ -56,7 +56,7 @@ $cart_product = cartItemById($product->id);
 
          <div class="grid gap product-list">
             <div class="col-xs-12 col-md-4">
-               <a href="#" class="product1">
+               <a href="product_item.php?id=9" class="product1">
                   <div class="product-image">
                      <img src="img/decor_vase_2.png" alt="">
                   </div>
@@ -67,7 +67,7 @@ $cart_product = cartItemById($product->id);
                </a>
             </div>
             <div class="col-xs-12 col-md-4">
-               <a href="#" class="product1">
+               <a href="product_item.php?id=10" class="product1">
                   <div class="product-image">
                      <img src="img/decor_pitcher_1.png" alt="">
                   </div>
@@ -78,7 +78,7 @@ $cart_product = cartItemById($product->id);
                </a>
             </div>
             <div class="col-xs-12 col-md-4">
-               <a href="#" class="product1">
+               <a href="product_item.php?id=6" class="product1">
                   <div class="product-image">
                      <img src="img/kitchen_cuttingboard_2.png" alt="">
                   </div>
