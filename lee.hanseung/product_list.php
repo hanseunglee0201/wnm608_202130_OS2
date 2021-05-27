@@ -125,7 +125,7 @@ $_SESSION['num'] = isset($_SESSION['num']) ?
       </div>
 
       <div class="container">
-         <a class="button" href="admin" style="margin-bottom: 1em;">Product Admin</a>
+         <a class="button" href="admin" style="margin-bottom: 1em;">User Admin</a>
       </div>
 
 <?php include "parts/footer.php" ?>

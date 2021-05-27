@@ -1,7 +1,7 @@
 <header class="navbar">
 		<div class="container display-flex flex-align-center">
 			<div class="flex-none">
-				<h1><a href="index.php">Pottery Charm</a></h1>
+				<h1><a href="index.php" style="padding-left: 0em;">Pottery Charm</a></h1>
 			</div>
 			<div class="flex-stretch"></div>
 			<nav class="flex-none nav flex">
